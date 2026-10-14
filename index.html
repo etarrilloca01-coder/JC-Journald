@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0062)file:///C:/Users/LENOVO/Downloads/Journal%20Jackson%20PRO.html -->
+<html data-theme="gray" lang="es"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Journal Jackson</title>
+<style>
+:root{--bg:#0f1318;--card:#181e26;--bd:#28313d;--tx:#e8edf3;--mu:#8b97a6;--g:#22c55e;--r:#ef4444;--ac:#f5b942;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f3f5f8;--card:#fff;--bd:#dde3ea;--tx:#18202a;--mu:#5d6b7b;--g:#16a34a;--r:#dc2626;--ac:#b97a00}}
+:root[data-theme="light"]{--bg:#f3f5f8;--card:#fff;--bd:#dde3ea;--tx:#18202a;--mu:#5d6b7b;--g:#16a34a;--r:#dc2626;--ac:#b97a00}
+:root[data-theme="dark"]{--bg:#0f1318;--card:#181e26;--bd:#28313d;--tx:#e8edf3;--mu:#8b97a6;--g:#22c55e;--r:#ef4444;--ac:#f5b942}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{width:100%;max-width:none;margin:0 auto;padding:48px 20px 20px}
+h1{font-size:20px;margin:0}h1 span{color:var(--ac)}h3{margin:0 0 10px;font-size:15px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px;margin-bottom:12px}
+.top{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end;justify-content:space-between}
+.row{display:flex;flex-wrap:wrap;gap:10px}.row>*{flex:1 1 130px}
+label{display:block;font-size:12px;color:var(--mu);margin-bottom:3px}
+input,select,textarea{width:100%;background:var(--bg);color:var(--tx);border:1px solid var(--bd);border-radius:9px;padding:9px;font:inherit}
+textarea{min-height:70px;resize:vertical}
+button{background:var(--ac);color:#111;border:0;border-radius:9px;padding:9px 14px;font:inherit;font-weight:600;cursor:pointer}
+button.s{background:transparent;color:var(--tx);border:1px solid var(--bd)}
+.tabs{display:flex;flex-direction:column;gap:8px;width:205px;flex:0 0 205px;margin:0}.tabs button{width:100%;text-align:left;background:var(--card);color:var(--mu);border:1px solid var(--bd);padding:13px 14px}
+.tabs button.on{background:var(--ac);color:#111}
+.big{font-size:26px;font-weight:700}.g{color:var(--g)}.r{color:var(--r)}.mu{color:var(--mu)}
+.alert{background:color-mix(in srgb,var(--r) 18%,transparent);border:1px solid var(--r);color:var(--r);padding:10px;border-radius:10px;margin-bottom:12px;font-weight:600}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.dh{font-size:11px;color:var(--mu);text-align:center}
+.d{min-height:100px;border:1px solid var(--bd);border-radius:8px;padding:4px;font-size:11px;cursor:pointer;background:var(--bg);overflow:hidden}
+.d b{font-size:12px}.d.p{background:color-mix(in srgb,var(--g) 20%,var(--bg));border-color:var(--g)}
+.d.n{background:color-mix(in srgb,var(--r) 20%,var(--bg));border-color:var(--r)}
+.d.sel{outline:2px solid var(--ac)}.d.t b{color:var(--ac)}.d.e{opacity:.3;cursor:default}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.m{background:var(--bg);border:1px solid var(--bd);border-radius:10px;padding:10px}.m small{color:var(--mu);display:block}.m div{font-size:20px;font-weight:700}
+.emo{display:flex;flex-wrap:wrap;gap:6px}.emo button{background:var(--bg);color:var(--tx);border:1px solid var(--bd);font-weight:500}.emo button.on{border-color:var(--ac);background:color-mix(in srgb,var(--ac) 25%,var(--bg))}
+.tip{background:var(--bg);border-left:3px solid var(--ac);padding:8px 10px;border-radius:6px;margin-top:8px}
+.tip ul{margin:4px 0 0;padding-left:18px}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:6px;border-bottom:1px solid var(--bd);text-align:left}
+.hide{display:none}
+:root[data-theme="gray"]{--bg:#2a2e35;--card:#383d46;--bd:#4d5460;--tx:#eef1f5;--mu:#a9b2be;--g:#4ade80;--r:#f87171;--ac:#f5b942}
+.tabs button{white-space:normal;font-size:14px}#cloudStatus{font-weight:700}.workspace{display:flex;align-items:flex-start;gap:18px}.panes{flex:1;min-width:0}.panes>div{min-width:0}@media(max-width:700px){.workspace{gap:10px}.tabs{width:125px;flex-basis:125px}.tabs button{font-size:12px;padding:10px 8px}.w{padding:44px 8px 14px}}
+.chip{border:1px solid var(--bd);border-radius:999px;padding:2px 10px;font-size:12px}
+#thm{position:fixed;top:calc(env(safe-area-inset-top,0px) + 8px);right:8px;z-index:9;background:var(--card);padding:6px 12px;font-size:13px}
+a{color:var(--ac)}.card{box-shadow:0 2px 10px rgba(0,0,0,.12)}
+.auth-wrap{min-height:100vh;display:grid;place-items:center;padding:24px}.auth-card{width:min(420px,100%);background:var(--card);border:1px solid var(--bd);border-radius:18px;padding:24px;box-shadow:0 12px 35px rgba(0,0,0,.24)}.auth-brand{text-align:center;margin-bottom:18px}.auth-brand h1{font-size:24px}.auth-brand .mu{margin-top:5px}.pass-row{display:flex;gap:7px}.pass-row input{min-width:0}.pass-row button{flex:0 0 auto}.auth-switch{width:100%;margin-top:9px}.auth-note{margin-top:16px;text-align:center;font-size:11px;color:var(--mu)}#authView input:focus,#authView button:focus{outline:2px solid var(--ac);outline-offset:1px}@media(max-width:520px){.auth-wrap{padding:14px}.auth-card{padding:18px}}
+.hd{background:linear-gradient(135deg,color-mix(in srgb,var(--ac) 14%,var(--card)),var(--card))}
+.pro{font-size:10px;background:var(--ac);color:#111;border-radius:6px;padding:2px 6px;vertical-align:middle}.jc-mark{display:inline-grid;place-items:center;width:31px;height:31px;margin-right:8px;border-radius:9px;background:linear-gradient(145deg,#f7c65a,#d99b18);color:#08101a;font-size:17px;font-weight:950;letter-spacing:-1px;vertical-align:-7px;box-shadow:0 5px 18px rgba(245,185,66,.22),inset 0 1px 0 rgba(255,255,255,.45);text-shadow:0 1px 0 rgba(255,255,255,.15)}
+.in2{display:flex;gap:6px}.in2 select{width:64px;flex:none}
+.bar{height:8px;border-radius:4px;background:var(--bd);overflow:hidden}.bar i{display:block;height:100%}
+.thumb{max-width:100%;max-height:140px;border-radius:8px;margin-top:6px;cursor:pointer;display:block}
+.d .g,.d .r{font-weight:700;font-size:12px}
+@media(min-width:1100px){.cal{gap:8px}.d{min-height:125px;padding:8px;font-size:13px}.d b{font-size:15px}}
+
+/* === MÉTRICAS — dashboard estadístico con curvas y puntos === */
+.metrics-shell{display:grid;gap:18px}
+.metric-hero,.metric-score{position:relative;overflow:hidden;border:0;border-radius:22px;background:#05080d;color:#f5f7fa;box-shadow:0 10px 30px rgba(0,0,0,.18);padding:24px}
+.metric-hero{min-height:410px;background:radial-gradient(circle at 93% 0%,rgba(34,197,94,.28),transparent 23%),linear-gradient(145deg,#06090e 0%,#03060a 100%)}
+.metric-score{min-height:400px;background:radial-gradient(circle at 56% 10%,rgba(236,72,153,.18),transparent 30%),radial-gradient(circle at 8% 100%,rgba(236,72,153,.16),transparent 35%),#05080d}
+.metric-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-start}
+.metric-kicker{font-size:12px;letter-spacing:.03em;color:#7f8794;text-transform:uppercase;font-weight:700}
+.metric-title{font-size:21px;font-weight:800;margin:0 0 3px;color:#f8fafc}
+.metric-big{font-size:38px;line-height:1.1;font-weight:850;margin:18px 0 8px}
+.metric-pill{display:inline-flex;align-items:center;gap:7px;background:rgba(34,197,94,.13);color:#22c55e;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:700}
+.metric-dot{width:7px;height:7px;border-radius:50%;background:#22c55e}
+.metric-switch{display:flex;background:#20242a;border-radius:999px;padding:3px;border:1px solid #2c323a}
+.metric-switch button{border:0;background:transparent;color:#9ca3af;border-radius:999px;padding:7px 14px;font-size:12px;font-weight:700}
+.metric-switch button.on{background:#f8fafc;color:#111827}
+.metric-extremes{display:flex;gap:10px;margin-top:-48px;position:relative;z-index:2;justify-content:flex-end}
+.metric-extreme{border:1px solid #262d36;background:rgba(12,16,22,.92);border-radius:28px;padding:9px 14px;min-width:92px;text-align:center}
+.metric-extreme small{display:block;color:#8b94a1;font-size:10px;text-transform:uppercase;font-weight:800}
+.metric-extreme b{font-size:15px}
+.metric-chart-wrap{margin-top:4px;height:235px}
+.metric-chart-tall{height:245px}
+.metric-chart{width:100%;height:100%;display:block}
+.metric-axis{font-size:10px;fill:#747d89}
+.metric-point{fill:#22c55e;stroke:#07100b;stroke-width:2}
+.metric-point.neg{fill:#ef4444}
+.metric-score-head{display:flex;justify-content:space-between;align-items:flex-start;gap:15px}
+.score-badge{background:#222832;border:1px solid #343b46;color:#d8dde5;border-radius:999px;padding:6px 11px;font-size:11px;font-weight:800;text-transform:uppercase}
+.metric-score-layout{display:grid;grid-template-columns:190px 1fr;gap:28px;align-items:center;margin-top:30px}
+.metric-gauge{width:160px;height:160px;border-radius:50%;display:grid;place-items:center;margin:auto;position:relative;background:conic-gradient(#f1a4c9 var(--score,46%),#25262d 0)}
+.metric-gauge:after{content:"";position:absolute;inset:18px;border-radius:50%;background:#090c11}
+.metric-gauge-inner{position:relative;z-index:1;text-align:center}
+.metric-gauge-inner small{display:block;color:#8c919c;font-size:10px;text-transform:uppercase;font-weight:800;letter-spacing:.12em}
+.metric-gauge-inner b{font-size:36px;line-height:1}
+.score-row{display:grid;grid-template-columns:150px 1fr 105px;gap:10px;align-items:center;margin:13px 0}
+.score-label{font-size:13px;line-height:1.15;color:#d7dbe1}
+.score-bar{height:11px;border-radius:999px;background:#25262d;overflow:hidden}
+.score-bar i{display:block;height:100%;border-radius:999px}
+.score-value{text-align:right;font-size:12px;font-weight:800}
+.score-green{color:#22c55e}.score-pink{color:#f0a0c5}.score-red{color:#fb7185}.score-blue{color:#6dd3ff}.score-yellow{color:#facc15}
+.score-note{margin-top:18px;color:#7f8794;font-size:11px}
+.metric-stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.metric-kpi{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px;min-height:82px}
+.metric-kpi small{display:block;color:var(--mu);font-size:11px;margin-bottom:5px}.metric-kpi b{font-size:21px}.metric-kpi span{display:block;color:var(--mu);font-size:10px;margin-top:3px}
+.curve-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.curve-card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:15px;overflow:hidden}
+.curve-head{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:8px}.curve-head h3{margin:0 0 2px;font-size:15px}.curve-head span{font-size:10px;color:var(--mu)}.curve-head>b{font-size:16px}
+.curve-svg{width:100%;height:225px;display:block}.curve-grid line.gridline{stroke:var(--bd);stroke-dasharray:3 6;opacity:.75}.curve-grid .axis-text{fill:var(--mu);font-size:10px}.curve-grid .zero{stroke:var(--mu);stroke-dasharray:4 5;opacity:.8}.curve-grid .curve-fill{opacity:.15}.curve-grid .curve-line{fill:none;stroke-width:2.7;stroke-linecap:round;stroke-linejoin:round}.curve-grid .curve-point{stroke:var(--card);stroke-width:2;cursor:pointer}.curve-grid .curve-point:hover{stroke-width:4}
+@media(max-width:950px){.metric-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.curve-grid{grid-template-columns:1fr}}
+@media(max-width:760px){.metric-score-layout{grid-template-columns:1fr;gap:18px}.metric-gauge{width:135px;height:135px}.score-row{grid-template-columns:115px 1fr 85px}.metric-big{font-size:31px}.metric-head{flex-direction:column}.metric-extremes{margin-top:12px;justify-content:flex-start;flex-wrap:wrap}.metric-hero,.metric-score{padding:18px}.metric-stat-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.metric-stat-grid{grid-template-columns:1fr}.score-row{grid-template-columns:105px 1fr 72px}.score-value{font-size:11px}.metric-extreme{min-width:82px}.curve-svg{height:205px}}
+
+/* === JACKSON A1 — IA + MARKET SESSIONS + VISUAL TRADING === */
+.jj-ai-hero{position:relative;overflow:hidden;border:1px solid rgba(245,185,66,.28);border-radius:24px;padding:24px;background:radial-gradient(circle at 86% 8%,rgba(34,197,94,.18),transparent 25%),radial-gradient(circle at 8% 100%,rgba(99,102,241,.16),transparent 30%),linear-gradient(135deg,#0a0e14 0%,#111823 55%,#0b111a 100%);box-shadow:0 18px 50px rgba(0,0,0,.25);color:#f7f8fa}
+.jj-ai-hero:after{content:"";position:absolute;inset:auto -70px -110px auto;width:260px;height:260px;border-radius:50%;border:1px solid rgba(245,185,66,.16);box-shadow:0 0 0 28px rgba(245,185,66,.025),0 0 0 56px rgba(245,185,66,.018)}
+.jj-ai-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;position:relative;z-index:1}
+.jj-ai-kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#f5b942;font-weight:800}
+.jj-ai-title{font-size:29px;line-height:1.05;margin:4px 0 7px;font-weight:900;letter-spacing:-.03em}
+.jj-ai-sub{max-width:720px;color:#aab4c2;font-size:13px}
+.jj-ai-live{display:flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid rgba(34,197,94,.28);background:rgba(34,197,94,.09);border-radius:999px;color:#76e39a;font-size:11px;font-weight:800;white-space:nowrap}
+.jj-ai-live i{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 5px rgba(34,197,94,.12)}
+.jj-ai-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin-top:18px;position:relative;z-index:1}
+.jj-ai-card{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:16px;min-width:0}
+.jj-ai-card h3{color:#f5f7fa;margin:0 0 7px;font-size:14px}
+.jj-ai-card .jj-muted{color:#8f9bab;font-size:11px}
+.jj-ai-summary{font-size:13px;line-height:1.65;color:#dfe5ec;white-space:pre-wrap}
+.jj-ai-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}
+.jj-ai-stat{padding:11px;border-radius:12px;background:rgba(0,0,0,.2);border:1px solid rgba(255,255,255,.06)}
+.jj-ai-stat small{display:block;color:#8793a3;font-size:10px;text-transform:uppercase;font-weight:800}
+.jj-ai-stat b{display:block;margin-top:3px;font-size:18px}
+.jj-ai-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.jj-ai-actions button{border-radius:10px}
+.jj-ai-actions .gold{background:#f5b942;color:#111}
+.jj-ai-actions .ghost{background:rgba(255,255,255,.04);color:#e8edf3;border:1px solid rgba(255,255,255,.1)}
+.jj-week-strip{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-top:12px}
+.jj-week-day{border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:8px 5px;text-align:center;background:rgba(0,0,0,.14)}
+.jj-week-day small{display:block;color:#8793a3;font-size:9px}.jj-week-day b{font-size:12px}.jj-week-day em{display:block;font-size:10px;font-style:normal;margin-top:3px}
+.jj-prompts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.jj-prompt{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:15px;position:relative;overflow:hidden}
+.jj-prompt:before{content:"";position:absolute;left:0;top:0;width:4px;height:100%;background:var(--ac)}
+.jj-prompt-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.jj-prompt h3{margin:0;font-size:14px}.jj-prompt p{font-size:11px;color:var(--mu);margin:5px 0 10px}
+.jj-prompt textarea{min-height:115px;font-size:11px;line-height:1.45;background:var(--bg)}
+.jj-copy{padding:6px 9px;font-size:11px}
+.jj-visuals{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:12px}
+.jj-visual{border-radius:18px;overflow:hidden;border:1px solid var(--bd);background:#080c12;min-height:180px;position:relative}
+.jj-visual svg{display:block;width:100%;height:100%;min-height:180px}.jj-visual-label{position:absolute;left:12px;bottom:10px;padding:5px 8px;border-radius:8px;background:rgba(0,0,0,.58);backdrop-filter:blur(8px);font-size:10px;color:#f4f7fa;font-weight:800}
+@media(max-width:950px){.jj-ai-grid{grid-template-columns:1fr}.jj-clocks{grid-template-columns:repeat(2,1fr)}.jj-visuals{grid-template-columns:1fr 1fr}.jj-visual:first-child{grid-column:1/-1}.jj-prompts{grid-template-columns:1fr}}
+@media(max-width:560px){.jj-ai-hero{padding:17px}.jj-ai-top{flex-direction:column}.jj-ai-title{font-size:24px}.jj-ai-stats{grid-template-columns:1fr 1fr}.jj-clocks{grid-template-columns:1fr 1fr}.jj-visuals{grid-template-columns:1fr}.jj-visual:first-child{grid-column:auto}.jj-week-strip{gap:3px}.jj-week-day{padding:7px 2px}}
+
+
+/* === A1 VISUAL UPGRADE === */
+body{background:
+ radial-gradient(circle at 8% 8%,rgba(245,185,66,.07),transparent 24%),
+ radial-gradient(circle at 92% 18%,rgba(34,197,94,.055),transparent 22%),
+ var(--bg)}
+.workspace{position:relative}
+.tabs{background:linear-gradient(180deg,rgba(255,255,255,.025),rgba(255,255,255,0));border:1px solid var(--bd);box-shadow:0 10px 30px rgba(0,0,0,.12)}
+.tabs button{transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+.tabs button:hover{transform:translateY(-2px)}
+.tabs button.on{box-shadow:0 7px 22px rgba(245,185,66,.16)}
+.jj-ai-hero{background:
+ radial-gradient(circle at 88% 15%,rgba(245,185,66,.24),transparent 19%),
+ radial-gradient(circle at 75% 85%,rgba(34,197,94,.16),transparent 25%),
+ radial-gradient(circle at 10% 90%,rgba(99,102,241,.2),transparent 30%),
+ linear-gradient(135deg,#070a10 0%,#111927 48%,#080d15 100%)!important;
+ box-shadow:0 25px 70px rgba(0,0,0,.32),inset 0 1px 0 rgba(255,255,255,.06)!important;
+}
+.jj-ai-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 0 42%,rgba(255,255,255,.035) 50%,transparent 58%);pointer-events:none;animation:jjShine 8s linear infinite}
+@keyframes jjShine{from{transform:translateX(-30%)}to{transform:translateX(30%)}}
+.jj-ai-kicker{display:inline-flex;padding:6px 9px;border-radius:999px;background:rgba(245,185,66,.09);border:1px solid rgba(245,185,66,.2);text-shadow:0 0 18px rgba(245,185,66,.25)}
+.jj-ai-title{font-size:clamp(30px,4vw,44px);letter-spacing:-.045em;text-shadow:0 8px 30px rgba(0,0,0,.35)}
+.jj-ai-sub{font-size:14px;line-height:1.65}
+.jj-ai-live{box-shadow:0 0 0 5px rgba(34,197,94,.035),0 8px 28px rgba(34,197,94,.08)}
+.jj-ai-grid{gap:16px}
+.jj-ai-card{background:linear-gradient(145deg,rgba(255,255,255,.065),rgba(255,255,255,.025));box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 14px 35px rgba(0,0,0,.13);transition:transform .2s ease,border-color .2s ease}
+.jj-ai-card:hover{transform:translateY(-3px);border-color:rgba(245,185,66,.22)}
+.jj-ai-stats{gap:8px}
+.jj-ai-stat{background:rgba(0,0,0,.18)!important;border-color:rgba(255,255,255,.07)!important}
+.jj-prompt{box-shadow:0 10px 28px rgba(0,0,0,.08);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.jj-prompt:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(0,0,0,.15);border-color:rgba(245,185,66,.28)}
+.jj-visual{box-shadow:0 16px 35px rgba(0,0,0,.2);transition:transform .2s ease,box-shadow .2s ease}
+.jj-visual:hover{transform:translateY(-4px) scale(1.01);box-shadow:0 22px 45px rgba(0,0,0,.3)}
+.card{box-shadow:0 8px 28px rgba(0,0,0,.08)}
+@media(max-width:650px){.jj-ai-top{flex-direction:column}.jj-ai-title{font-size:31px}.jj-prompts{grid-template-columns:1fr}.jj-visuals{grid-template-columns:1fr}}
+
+
+/* === ARCHIVO COMPLETO: guardar/cargar TODO === */
+.jj-load-all{position:relative;background:rgba(255,255,255,.055);color:var(--tx);border:1px solid var(--bd);border-radius:11px;padding:10px 15px;font-weight:900;box-shadow:0 8px 24px rgba(0,0,0,.10);transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.jj-load-all:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.16);border-color:color-mix(in srgb,var(--ac) 55%,var(--bd))}
+.jj-load-all:active{transform:translateY(0)}
+.jj-file-card{border:1px solid color-mix(in srgb,var(--ac) 30%,var(--bd));background:linear-gradient(145deg,color-mix(in srgb,var(--ac) 9%,var(--card)),var(--card));box-shadow:0 12px 30px rgba(0,0,0,.10)}
+.jj-file-card strong{color:var(--ac)}
+@media(max-width:640px){.jj-top-actions button{flex:1 1 145px}.jj-save-meta{justify-content:flex-start}}
+
+/* === GUARDADO A1 === */
+.jj-save-all{position:relative;background:linear-gradient(135deg,#f5b942,#ffd66b);color:#101216;border:0;border-radius:11px;padding:10px 15px;font-weight:900;box-shadow:0 8px 24px rgba(245,185,66,.22);transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
+.jj-save-all:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(245,185,66,.32);filter:saturate(1.08)}
+.jj-save-all:active{transform:translateY(0)}
+.jj-save-all.saving{animation:jjSavePulse 1s ease-in-out infinite}
+.jj-save-meta{display:flex;align-items:center;gap:7px;margin-top:8px;font-size:10px;color:var(--mu);justify-content:flex-end}
+.jj-save-dot{width:7px;height:7px;border-radius:50%;background:var(--g);box-shadow:0 0 0 4px color-mix(in srgb,var(--g) 15%,transparent)}
+.jj-save-dot.saving{background:var(--ac);box-shadow:0 0 0 4px color-mix(in srgb,var(--ac) 15%,transparent)}
+@keyframes jjSavePulse{0%,100%{box-shadow:0 8px 24px rgba(245,185,66,.22)}50%{box-shadow:0 12px 34px rgba(245,185,66,.42)}}
+@media(max-width:640px){.jj-save-all{width:100%}.jj-save-meta{justify-content:flex-start}}
+.jj-add-top{background:linear-gradient(135deg,#22c55e,#7bf7a4);color:#07110a;border:0;border-radius:11px;padding:10px 15px;font-weight:900;box-shadow:0 8px 24px rgba(34,197,94,.18);transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}.jj-add-top:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(34,197,94,.28);filter:saturate(1.08)}.jj-add-top:active{transform:translateY(0)}
+@media(max-width:640px){.jj-top-actions{justify-content:stretch!important}.jj-top-actions button{flex:1;min-width:140px}}
+
+/* === Ventana del día (modal) === */
+#edBack{position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,.62);backdrop-filter:blur(2px)}
+#ed{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:min(940px,95vw);max-height:92vh;overflow-y:auto;z-index:1001;margin:0;box-shadow:0 24px 70px rgba(0,0,0,.55)}
+#ed .ed-head{display:flex;justify-content:space-between;align-items:center;gap:10px;position:sticky;top:-14px;background:var(--card);padding:10px 0;margin:-10px 0 6px;z-index:2}
+#ed .ed-head h3{margin:0}
+#edClose{background:var(--bg);color:var(--tx);border:1px solid var(--bd);padding:6px 12px}
+#mtBox input[type=file]{margin-top:8px}
+#mtBox .mt-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;justify-content:space-between}
+</style></head><body>
+<section id="authView">
+<div class="auth-wrap">
+<div class="auth-card">
+<div class="auth-brand">
+<h1><span class="jc-mark" aria-label="JC">JC</span>Journal <span>Jackson</span> <small class="pro">PRO</small></h1>
+<div class="mu">Ingresa a tu cuenta</div>
+</div>
+<div class="alert hide" id="authMsg"></div>
+<div id="loginPanel">
+<h3>Iniciar sesión</h3>
+<label>Tu nombre</label><input autocomplete="username" id="loginUser" placeholder="Escribe tu nombre" value=""/>
+<label style="display:none">Contraseña</label>
+<div class="pass-row" style="display:none"><input autocomplete="current-password" id="loginPass" placeholder="Tu contraseña" type="password" value=""/><button class="s" id="toggleLoginPass" type="button">👁️ Mostrar</button></div>
+<button id="loginBtn" style="width:100%;margin-top:14px">Iniciar sesión</button>
+<button class="s auth-switch" id="showRegister" type="button">Crear una cuenta</button>
+</div>
+<div class="hide" id="registerPanel">
+<h3>Crear cuenta</h3>
+<label>Tu nombre</label><input autocomplete="username" id="regUser" placeholder="Escribe tu nombre"/>
+<label style="display:none">Contraseña</label>
+<div class="pass-row" style="display:none"><input autocomplete="new-password" id="regPass" placeholder="Crea una contraseña" type="password"/><button class="s" id="toggleRegPass" type="button">👁️ Mostrar</button></div>
+<button id="registerBtn" style="width:100%;margin-top:14px">Registrarme</button>
+<button class="s auth-switch" id="showLogin" type="button">Ya tengo una cuenta</button>
+</div>
+<div class="auth-note">Entra solo con tu nombre. Cada nombre tiene sus propios datos y se abre desde cualquier dispositivo escribiendo el mismo nombre.</div>
+</div>
+</div>
+</section>
+<div class="hide" id="appShell"><button class="s" id="thm">🌫️ Gris</button>
+<div class="w">
+<div class="card hd">
+<div class="top"><div><h1><svg aria-hidden="true" height="22" style="vertical-align:-4px;margin-right:4px" viewbox="0 0 24 24" width="22"><path d="M3 17.5 8.2 12l3.6 3.2L20.5 6" fill="none" stroke="var(--ac)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path><path d="M15.5 6h5v5" fill="none" stroke="var(--ac)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"></path></svg>Journal <span>Jackson</span> <small class="pro">PRO</small></h1><div class="mu" id="sub">Resultado total: -$184,6 · <span id="currentUser"></span> · <span id="cloudStatus">☁️ Conectando…</span></div></div>
+<div style="text-align:right"><label>Capital actual</label><div class="big r" id="cur">$9815,4</div><div class="jj-top-actions" style="display:flex;gap:8px;justify-content:flex-end;margin-top:7px;flex-wrap:wrap"><button class="jj-save-all" id="saveAll" type="button">💾 Guardar archivo</button><button class="jj-load-all" id="loadAll" type="button">📂 Cargar</button><button class="jj-add-top" id="addTop" type="button">＋ Agregar</button><input id="jjBackupInput" type="file" accept=".json,application/json" hidden><button class="s" id="newAccount" type="button">👤 Registrar otro usuario</button><button id="logout" type="button">⎋ Cerrar sesión</button></div></div><div class="jj-save-meta"><i class="jj-save-dot" id="saveDot"></i><span id="saveMeta">Guardado automático activo</span></div></div></div>
+<div class="row" style="margin-top:12px">
+<div><label>Capital inicial ($)</label><input id="cap" step="any" type="number"/></div>
+<div><label>Límite de pérdida diaria</label><div class="in2"><input id="lim" min="0" step="any" type="number"/><select id="limT"><option>$</option><option>%</option></select></div></div>
+<div><label>Pérdida máxima de la cuenta</label><div class="in2"><input id="mx" min="0" step="any" type="number"/><select id="mxT"><option>$</option><option>%</option></select></div></div>
+</div>
+<div id="mxb" style="margin-top:10px"><div class="mu" style="font-size:12px;display:flex;justify-content:space-between"><span>Pérdida máx. de cuenta: $600 (piso $9400)</span><span>31% usado</span></div><div class="bar"><i style="width:30.76684999999998%;background:var(--g)"></i></div></div>
+</div>
+
+<div class="alert hide" id="alert"></div>
+<div class="workspace"><nav class="tabs"><button class="on" data-t="a">Calendario</button><button class="" data-t="i">🤖 IA Coach</button><button class="" data-t="b">Métricas</button><button class="" data-t="c">Emociones</button><button class="" data-t="d">Analítica</button><button class="" data-t="h">Herramientas</button></nav><main class="panes">
+<div class="" id="ta">
+<div class="card">
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+<button class="s" id="pv">◀</button><b id="mt">octubre de 2026</b><button class="s" id="nx">▶</button></div>
+<div class="cal" id="cal"><div class="dh">Lun</div><div class="dh">Mar</div><div class="dh">Mié</div><div class="dh">Jue</div><div class="dh">Vie</div><div class="dh">Sáb</div><div class="dh">Dom</div><div class="d e"></div><div class="d e"></div><div class="d e"></div><div class="d n" data-k="2026-10-01"><b>1</b><div class="r">-$21,76</div><div class="mu">1 trades</div></div><div class="d" data-k="2026-10-02"><b>2</b></div><div class="d t" data-k="2026-10-03"><b>3</b></div><div class="d" data-k="2026-10-04"><b>4</b></div><div class="d" data-k="2026-10-05"><b>5</b></div><div class="d" data-k="2026-10-06"><b>6</b></div><div class="d" data-k="2026-10-07"><b>7</b></div><div class="d" data-k="2026-10-08"><b>8</b></div><div class="d" data-k="2026-10-09"><b>9</b></div><div class="d" data-k="2026-10-10"><b>10</b></div><div class="d" data-k="2026-10-11"><b>11</b></div><div class="d sel" data-k="2026-10-12"><b>12</b></div><div class="d" data-k="2026-10-13"><b>13</b></div><div class="d" data-k="2026-10-14"><b>14</b></div><div class="d" data-k="2026-10-15"><b>15</b></div><div class="d" data-k="2026-10-16"><b>16</b></div><div class="d" data-k="2026-10-17"><b>17</b></div><div class="d" data-k="2026-10-18"><b>18</b></div><div class="d" data-k="2026-10-19"><b>19</b></div><div class="d" data-k="2026-10-20"><b>20</b></div><div class="d" data-k="2026-10-21"><b>21</b></div><div class="d" data-k="2026-10-22"><b>22</b></div><div class="d" data-k="2026-10-23"><b>23</b></div><div class="d" data-k="2026-10-24"><b>24</b></div><div class="d" data-k="2026-10-25"><b>25</b></div><div class="d" data-k="2026-10-26"><b>26</b></div><div class="d" data-k="2026-10-27"><b>27</b></div><div class="d" data-k="2026-10-28"><b>28</b></div><div class="d" data-k="2026-10-29"><b>29</b></div><div class="d" data-k="2026-10-30"><b>30</b></div><div class="d" data-k="2026-10-31"><b>31</b></div></div>
+<div class="mu" id="mtot" style="margin-top:8px">Mes: <b class="r">-$21,76</b> · 1 trades</div><div id="wk" style="display:flex;flex-wrap:wrap;gap:6px;margin-top:6px"><span class="chip r">Sem 1: -$21,76</span></div>
+</div>
+<div class="hide" id="edBack"></div>
+<div class="card hide" id="ed">
+<div class="ed-head"><h3 id="edt">📅 lunes, 12 de octubre</h3><button id="edClose" type="button" title="Cerrar (Esc)">✕ Cerrar</button></div>
+<div class="row">
+<div><label>Trades ganados</label><input id="w" min="0" type="number"/></div>
+<div><label>Trades perdidos</label><input id="l" min="0" type="number"/></div>
+<div><label>Total ganado ($)</label><input id="won" min="0" step="any" type="number"/></div>
+<div><label>Total perdido ($)</label><input id="lost" min="0" step="any" type="number"/></div>
+</div>
+<div class="card" style="margin:10px 0;text-align:center"><span class="mu">Resultado del día (0 trades)</span><div class="big" id="net">$0</div></div>
+<div class="mu" id="lmsg" style="margin-bottom:8px;text-align:center">Límite diario: $300 · usado $0</div>
+<h3 style="margin-top:14px">Trades del día</h3>
+<div class="card" id="mtBox" style="margin:0 0 10px">
+<b>📸 Importar captura del MT5</b>
+<div class="mu">Sube la captura del historial: leo las operaciones (rojo = pérdida, azul = ganancia) y te las dejo una por una ya llenas. Tú solo eliges cómo te sentiste y guardas.</div>
+<input accept="image/*" id="mtFile" type="file"/>
+<div class="mu hide" id="mtStatus" style="margin-top:6px"></div>
+<div class="tip hide" id="mtBar"><div class="mt-bar"><span>Operación <b id="mtIdx">1</b> de <b id="mtTot">1</b> · <span id="mtInfo"></span></span><span style="display:flex;gap:6px"><button class="s" id="mtSkip" type="button">Saltar</button><button class="s" id="mtCancel" type="button">Cancelar importación</button></span></div></div>
+</div>
+<div class="card" style="margin:0 0 10px"><div class="row">
+<div><label>Activo</label><input id="tas" list="asl" placeholder="EURUSD, BTC, NQ..."/><datalist id="asl"><option value="US500"></option><option value="US30"></option><option value="GER30"></option><option value="US100"></option><option value="Sin activo"></option></datalist></div>
+<div><label>Resultado</label><select id="tr"><option value="1">🟢 Ganador</option><option value="-1">🔴 Perdedor</option><option value="0">⚪ Empate</option></select></div>
+<div><label>Monto ($)</label><input id="tamt" min="0" step="any" type="number"/></div>
+<div><label>Hora de entrada</label><input id="thh" type="time"/></div>
+<div><label>Emoción al entrar</label><select id="te"><option>😌 Calmado</option><option>😰 Ansioso</option><option>🤩 Eufórico</option><option>😨 Miedo</option><option>😡 Frustrado</option><option>🔥 Venganza/FOMO</option><option>😴 Cansado</option></select></div>
+</div>
+<div class="row" style="margin-top:8px">
+<div><label>Setup / estrategia</label><input id="tsetup" placeholder="Breakout, pullback, reversión..."/></div>
+<div><label>Error (opcional)</label><input id="terr" placeholder="FOMO, entrada tardía, sin stop..."/></div>
+</div>
+<label style="margin-top:8px">¿Por qué tomaste este trade?</label><textarea id="tw" placeholder="Setup, confirmaciones, qué viste..."></textarea>
+<label style="margin-top:8px">Anotaciones del trade</label><input id="tn" placeholder="Qué aprendiste, qué harías distinto"/>
+<label style="margin-top:8px">Imagen / captura del gráfico</label><input accept="image/*" id="tim" type="file"/><img class="thumb hide" id="tpv"/>
+<div class="row" style="margin-top:10px"><button id="tadd">+ Guardar trade</button><button class="s hide" id="tcancel" type="button">Cancelar edición</button></div></div>
+<div id="tl"></div>
+<div id="sum"></div><button class="ai hide s" id="aiD" style="margin-top:6px">🤖 Análisis IA del día</button><div class="tip hide" id="aiDo" style="white-space:pre-wrap"></div><label style="margin-top:10px">Anotaciones</label><textarea id="note" placeholder="¿Qué hiciste bien? ¿Qué errores cometiste?"></textarea>
+<div class="row" style="margin-top:10px"><button id="sv">✅ Finalizar día y ver resumen</button><button class="s" id="dl">Borrar día</button></div>
+</div>
+</div>
+
+<div class="hide" id="ti">
+<section class="jj-ai-hero">
+<div class="jj-ai-top"><div><div class="jj-ai-kicker">JC Intelligence · Trading Journal</div><div class="jj-ai-title">Tu copiloto de trading.</div><div class="jj-ai-sub">Convierte tus operaciones registradas en un resumen diario y semanal, detecta patrones de disciplina y prepara prompts profesionales para analizar tu desempeño con IA.</div></div><div class="jj-ai-live"><i></i> IA ACTIVA</div></div>
+<div class="jj-ai-grid">
+<div class="jj-ai-card"><h3>☀️ Resumen inteligente del día</h3><div class="jj-muted" id="jjDailyLabel">Analizando el registro de hoy…</div><div class="jj-ai-summary" id="jjDailySummary" style="margin-top:8px">Aún no hay datos suficientes.</div><div class="jj-ai-stats" id="jjDailyStats"></div><div class="jj-ai-actions"><button class="gold" id="jjRefreshAI">✨ Actualizar análisis</button><button class="ghost" id="jjCopyDaily">📋 Copiar resumen</button></div></div>
+<div class="jj-ai-card"><h3>📈 Resumen inteligente de la semana</h3><div class="jj-muted">Últimos 7 días registrados · rendimiento + disciplina</div><div class="jj-ai-summary" id="jjWeeklySummary" style="margin-top:8px">Aún no hay datos suficientes.</div><div class="jj-ai-stats" id="jjWeeklyStats"></div><div class="jj-ai-actions"><button class="ghost" id="jjCopyWeekly">📋 Copiar resumen semanal</button></div><div class="jj-week-strip" id="jjWeekStrip"></div></div>
+</div></section>
+<section class="card" style="margin-top:14px"><div class="curve-head"><div><h3 style="margin:0">🧠 Prompt Studio</h3><span>Prompts listos para ChatGPT, Claude, Gemini u otra IA</span></div><span class="chip">PRO</span></div>
+<div class="jj-prompts" style="margin-top:12px">
+<div class="jj-prompt"><div class="jj-prompt-head"><h3>☀️ Cierre diario</h3><button class="s jj-copy" data-prompt="daily">Copiar</button></div><p>Para revisar ejecución, errores y emoción dominante.</p><textarea readonly id="jjPromptDaily"></textarea></div>
+<div class="jj-prompt"><div class="jj-prompt-head"><h3>📊 Revisión semanal</h3><button class="s jj-copy" data-prompt="weekly">Copiar</button></div><p>Para encontrar patrones repetidos y prioridades.</p><textarea readonly id="jjPromptWeekly"></textarea></div>
+<div class="jj-prompt"><div class="jj-prompt-head"><h3>🧘 Psicología</h3><button class="s jj-copy" data-prompt="psych">Copiar</button></div><p>Para detectar FOMO, venganza, ansiedad y sobreoperación.</p><textarea readonly id="jjPromptPsych"></textarea></div>
+<div class="jj-prompt"><div class="jj-prompt-head"><h3>🎯 Plan pre-market</h3><button class="s jj-copy" data-prompt="premarket">Copiar</button></div><p>Para convertir tus reglas y estadísticas en una checklist.</p><textarea readonly id="jjPromptPremarket"></textarea></div>
+</div></section>
+<section class="card" style="margin-top:14px"><div class="curve-head"><div><h3 style="margin:0">📸 Trading Visual</h3><span>Lectura visual del proceso: contexto → ejecución → disciplina</span></div></div>
+<div class="jj-visuals" style="margin-top:12px">
+<div class="jj-visual"><svg viewBox="0 0 700 300" preserveAspectRatio="none"><defs><linearGradient id="jjg1" x1="0" x2="1"><stop offset="0" stop-color="#0a1119"/><stop offset="1" stop-color="#15251d"/></linearGradient></defs><rect width="700" height="300" fill="url(#jjg1)"/><g stroke="#263241" opacity=".65"><path d="M0 55H700M0 105H700M0 155H700M0 205H700M0 255H700M80 0V300M180 0V300M280 0V300M380 0V300M480 0V300M580 0V300"/></g><polyline points="30,225 90,210 145,220 205,180 260,192 320,140 375,160 430,112 485,125 545,80 610,94 675,45" fill="none" stroke="#22c55e" stroke-width="4" stroke-linecap="round"/><g fill="#22c55e" opacity=".85"><circle cx="205" cy="180" r="5"/><circle cx="320" cy="140" r="5"/><circle cx="430" cy="112" r="5"/><circle cx="545" cy="80" r="5"/></g><g stroke="#f5b942" stroke-width="2"><line x1="205" y1="155" x2="205" y2="205"/><line x1="320" y1="115" x2="320" y2="165"/><line x1="430" y1="87" x2="430" y2="137"/></g></svg><span class="jj-visual-label">PRICE ACTION · ESTRUCTURA</span></div>
+<div class="jj-visual"><svg viewBox="0 0 500 300" preserveAspectRatio="none"><rect width="500" height="300" fill="#090d13"/><g stroke="#25303d" opacity=".7"><path d="M0 60H500M0 120H500M0 180H500M0 240H500M80 0V300M160 0V300M240 0V300M320 0V300M400 0V300"/></g><g stroke="#e8edf3" stroke-width="2"><path d="M80 150V80M80 105h22v65H80zM150 170V95M150 120h22v45h-22zM220 135V65M220 88h22v55h-22zM290 190V110M290 130h22v55h-22zM360 115V45M360 70h22v70h-22zM430 95V25M430 50h22v58h-22z"/></g><path d="M40 210C120 190 170 215 235 145S340 145 470 65" fill="none" stroke="#6dd3ff" stroke-width="3"/></svg><span class="jj-visual-label">LIQUIDEZ · NIVELES · SESIÓN</span></div>
+<div class="jj-visual"><svg viewBox="0 0 500 300" preserveAspectRatio="none"><rect width="500" height="300" fill="#090d13"/><circle cx="250" cy="150" r="88" fill="none" stroke="#263241" stroke-width="24"/><circle cx="250" cy="150" r="88" fill="none" stroke="#22c55e" stroke-width="24" stroke-dasharray="355 198" stroke-linecap="round" transform="rotate(-90 250 150)"/><text x="250" y="145" text-anchor="middle" fill="#f8fafc" font-size="42" font-weight="800">A1</text><text x="250" y="170" text-anchor="middle" fill="#8f9bab" font-size="13">DISCIPLINA</text></svg><span class="jj-visual-label">PROCESO · CONTROL · RIESGO</span></div>
+</div></section>
+</div>
+
+<div class="hide" id="tb">
+<div class="metrics-shell metrics-pro">
+
+<section class="metric-score">
+<div class="metric-score-head">
+<div>
+<h2 class="metric-title">Puntuación estadística del trader</h2>
+<div class="metric-kicker">Se recalcula automáticamente con lo que registras en el calendario</div>
+</div>
+<div class="score-badge" id="mxScoreLabel">Sin datos</div>
+</div>
+<div class="metric-score-layout">
+<div>
+<div class="metric-gauge" id="mxGauge" style="--score:0%">
+<div class="metric-gauge-inner"><small>Progreso</small><b id="mxScore">0</b><small>%</small></div>
+</div>
+</div>
+<div id="mxScoreRows"></div>
+</div>
+<div class="score-note">La puntuación es un índice interno de lectura estadística; no modifica tus datos ni representa una recomendación financiera.</div>
+</section>
+<section class="metric-stat-grid" id="mxKpis"></section>
+<section class="curve-grid">
+<div class="curve-card"><div class="curve-head"><div><h3>Curva de capital</h3><span>Capital inicial → capital actual</span></div><b id="eqCurrent">$0</b></div><svg class="curve-svg" id="eqCurve" viewbox="0 0 900 250"></svg></div>
+<div class="curve-card"><div class="curve-head"><div><h3>Ganancia / pérdida diaria</h3><span>Cada punto corresponde a un día registrado</span></div><b id="dailyNet">$0</b></div><svg class="curve-svg" id="dailyCurve" viewbox="0 0 900 250"></svg></div>
+<div class="curve-card"><div class="curve-head"><div><h3>Drawdown</h3><span>Distancia desde el máximo de capital</span></div><b class="r" id="ddValue">$0</b></div><svg class="curve-svg" id="ddCurve" viewbox="0 0 900 250"></svg></div>
+<div class="curve-card"><div class="curve-head"><div><h3>Tasa de acierto acumulada</h3><span>Cómo cambia tu porcentaje de operaciones ganadoras</span></div><b id="wrValue">0%</b></div><svg class="curve-svg" id="wrCurve" viewbox="0 0 900 250"></svg></div>
+</section>
+<section class="card">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+<div><h3 style="margin:0">Estadísticas completas</h3><div class="mu" style="font-size:11px">Todo se alimenta de los días y trades que guardes en el calendario.</div></div>
+<select aria-label="Periodo de las estadísticas" id="eqPeriod" style="width:auto">
+<option value="all">Todo el historial</option><option value="month">Últimos 30 días</option><option value="week">Últimos 7 días</option>
+</select>
+</div>
+<div class="grid" id="mets" style="margin-top:12px"></div>
+</section>
+<div class="card"><h3>Rendimiento por activo</h3><div style="overflow-x:auto"><table id="at"><tbody></tbody></table></div></div>
+</div>
+</div>
+<div class="hide" id="tc">
+<div class="card"><h3>Gestión emocional</h3><div class="mu" style="margin-bottom:8px">Toca una emoción para ver cómo manejarla.</div>
+<div class="emo" id="emo2"><button class="" data-e="😌 Calmado">😌 Calmado</button><button class="" data-e="😰 Ansioso">😰 Ansioso</button><button class="" data-e="🤩 Eufórico">🤩 Eufórico</button><button class="" data-e="😨 Miedo">😨 Miedo</button><button class="" data-e="😡 Frustrado">😡 Frustrado</button><button class="" data-e="🔥 Venganza/FOMO">🔥 Venganza/FOMO</button><button class="" data-e="😴 Cansado">😴 Cansado</button></div><div id="etip2"></div><button class="ai hide" id="aiG" style="margin-top:10px">🤖 Análisis IA de mi psicología y trades</button><div class="tip hide" id="aiGo" style="white-space:pre-wrap"></div></div>
+<div class="card"><h3>Tu resultado según cómo te sientes</h3><div style="overflow-x:auto"><table id="et"><tbody><tr><th>Emoción</th><th>Registros</th><th>Promedio</th><th>Total</th></tr><tr><td>😌 Calmado</td><td>22</td><td class="r">-$8,39</td><td class="r">-$184,6</td></tr></tbody></table></div></div>
+</div>
+<div class="hide" id="td">
+<div class="card"><h3>Resultado por día de la semana</h3><svg id="c1" style="width:100%" viewbox="0 0 600 205"><line opacity=".25" stroke="currentColor" x1="40" x2="590" y1="100" y2="100"></line><rect fill="var(--g)" height="0" rx="3" width="69.14285714285714" x="50" y="100"></rect><text fill="currentColor" font-size="10" opacity=".6" text-anchor="middle" x="84.57142857142857" y="198">Lun</text><rect fill="var(--r)" height="80" rx="3" width="69.14285714285714" x="127.14285714285714" y="100"></rect><text fill="currentColor" font-size="10" opacity=".6" text-anchor="middle" x="161.71428571428572" y="198">Mar</text><text fill="currentColor" font-size="9" text-anchor="middle" x="161.71428571428572" y="192">-95</text><rect fill="var(--r)" height="57.838708892394635" rx="3" width="69.14285714285714" x="204.28571428571428" y="100"></rect><text fill="currentColor" font-size="10" opacity=".6" text-anchor="middle" x="238.85714285714283" y="198">Mié</text><text fill="currentColor" font-size="9" text-anchor="middle" x="238.85714285714283" y="169.83870889239464">-68</text><rect fill="var(--r)" height="18.4190005195157" rx="3" width="69.14285714285714" x="281.42857142857144" y="100"></rect><text fill="currentColor" font-size="10" opacity=".6" text-anchor="middle" x="316" y="198">Jue</text><text fill="currentColor" font-size="9" text-anchor="middle" x="316" y="130.4190005195157">-22</text><rect fill="var(--g)" height="0" rx="3" width="69.14285714285714" x="358.57142857142856" y="100"></rect><text fill="currentColor" font-size="10" opacity=".6" text-anchor="middle" x="393.1428571428571" y="198">Vie</text><rect fill="var(--g)" height="0" rx="3" width="69.14285714285714" x="435.71428571428567" y="100"></rect><text fill="currentColor" font-size="10" opacity=".6" text-anchor="middle" x="470.2857142857142" y="198">Sáb</text><rect fill="var(--g)" height="0" rx="3" width="69.14285714285714" x="512.8571428571429" y="100"></rect><text fill="currentColor" font-size="10" opacity=".6" text-anchor="middle" x="547.4285714285714" y="198">Dom</text></svg></div>
+<div class="card"><h3>Resultado por mes</h3><div style="overflow-x:auto"><svg id="c2" style="width:100%;min-width:420px" viewbox="0 0 600 205"><line opacity=".25" stroke="currentColor" x1="40" x2="590" y1="100" y2="100"></line><rect fill="var(--r)" height="80" rx="3" width="262" x="50" y="100"></rect><text fill="currentColor" font-size="10" opacity=".6" text-anchor="middle" x="181" y="198">26-09</text><text fill="currentColor" font-size="9" text-anchor="middle" x="181" y="192">-163</text><rect fill="var(--r)" height="10.690175883115504" rx="3" width="262" x="320" y="100"></rect><text fill="currentColor" font-size="10" opacity=".6" text-anchor="middle" x="451" y="198">26-10</text><text fill="currentColor" font-size="9" text-anchor="middle" x="451" y="122.6901758831155">-22</text></svg></div></div>
+<div class="card"><h3>Resultado por hora de entrada</h3><svg id="c3" style="width:100%" viewbox="0 0 600 205"><text fill="currentColor" opacity=".5" text-anchor="middle" x="300" y="100">Sin datos aún</text></svg></div>
+<div class="card"><h3>Drawdown (caída desde tu máximo)</h3><svg id="c4" style="width:100%" viewbox="0 0 600 205"><polygon fill="var(--r)" opacity=".25" points="40,20 40,101.91595824726919 310,161.1398740310863 580,180 580,20"></polygon><polyline fill="none" points="40,101.91595824726919 310,161.1398740310863 580,180" stroke="var(--r)" stroke-width="2"></polyline><text fill="currentColor" font-size="10" opacity=".6" x="4" y="24">$0</text><text fill="currentColor" font-size="10" opacity=".6" x="4" y="180">-$184,6</text></svg></div>
+<div class="card"><h3>Por estrategia / setup</h3><div style="overflow-x:auto"><table id="st"><tbody><tr><th>Setup</th><th>Trades</th><th>Win rate</th><th>Neto</th></tr><tr><td>Sin setup</td><td>22</td><td>5%</td><td class="r">-$184,6</td></tr></tbody></table></div></div>
+<div class="card"><h3>Costo de tus errores</h3><div style="overflow-x:auto"><table id="xt"><tbody><tr><th>Error</th><th>Trades</th><th>Win rate</th><th>Neto</th></tr><tr><td>Sin error ✅</td><td>22</td><td>5%</td><td class="r">-$184,6</td></tr></tbody></table></div></div>
+</div>
+<div class="hide" id="th">
+<div class="card"><h3>🧮 Calculadora de tamaño de posición</h3>
+<div class="row"><div><label>Capital ($)</label><input id="pc" type="number"/></div><div><label>Riesgo %</label><input id="pr" step="any" type="number" value="1"/></div><div><label>Entrada</label><input id="pe" step="any" type="number"/></div><div><label>Stop loss</label><input id="ps" step="any" type="number"/></div><div><label>Objetivo (R)</label><input id="pt" step="any" type="number" value="2"/></div></div>
+<div class="grid" id="po" style="margin-top:10px"><div class="mu">Completa entrada y stop loss.</div></div></div>
+
+<div class="card"><h3>🎯 Meta mensual</h3><label>Meta del mes ($)</label><input id="gm" type="number"/><div id="gmo" style="margin-top:8px"><div class="mu">Define una meta para ver tu progreso del mes.</div></div></div>
+<div class="card"><h3>📜 Mis reglas</h3><textarea id="rl" placeholder="Escribe tus reglas de trading..."></textarea></div>
+<div class="card jj-file-card"><h3>💾 Archivo completo del Journal</h3><div class="mu">Guarda <strong>todo tu historial</strong> en un solo archivo: calendario, operaciones, notas, emociones, reglas, metas y capturas de pantalla de tus trades. Este respaldo puede cargarse en otra PC.</div><div class="row" style="margin-top:10px"><button class="jj-save-all" id="saveAllTools" type="button">💾 Guardar archivo completo</button><button class="jj-load-all" id="loadAllTools" type="button">📂 Cargar archivo</button></div><div class="mu" id="jjBackupInfo" style="margin-top:9px">Formato: Journal Jackson Backup (.json) · pensado para mover tus datos entre computadoras.</div></div><div class="card"><h3>📊 Exportar datos</h3><div class="mu">Descarga tu historial en un archivo compatible con Excel.</div><button id="ex" style="margin-top:8px">Exportar a Excel (.csv)</button></div>
+<div class="card"><h3>🔗 Recursos</h3><div><a href="https://www.tradingview.com/" rel="noopener" target="_blank">TradingView</a> · gráficos<br/><a href="https://www.forexfactory.com/calendar" rel="noopener" target="_blank">Forex Factory</a> · calendario económico<br/><a href="https://www.babypips.com/" rel="noopener" target="_blank">BabyPips</a> · educación</div></div>
+</div></main></div>
+<div class="mu" style="font-size:12px;text-align:center">Los datos se guardan por usuario en la nube y se sincronizan entre tus dispositivos. No es asesoría financiera.</div>
+</div>
+</div>
+<script>
+const E={
+ "😌 Calmado":["Es tu mejor estado para operar.","Sigue tu plan tal cual; no aumentes el riesgo por sentirte bien.","Anota qué rutina hiciste antes de operar para repetirla."],
+ "😰 Ansioso":["Reduce el tamaño de posición a la mitad.","Respira 4-7-8 durante 2 minutos antes de entrar.","Si dudas de la entrada, no la tomes: no hay setup, no hay trade."],
+ "🤩 Eufórico":["Después de ganar, el exceso de confianza es el riesgo.","No subas el lote ni te saltes el stop.","Cierra la sesión al llegar a tu meta diaria."],
+ "😨 Miedo":["Define el stop antes de entrar y confía en él.","Opera con menos riesgo (0.5% por trade) hasta recuperar confianza.","Revisa tus estadísticas: los números te dan perspectiva."],
+ "😡 Frustrado":["Aléjate de la pantalla 15-30 minutos.","No operes para 'arreglar' el día.","Escribe qué falló: ¿fue el plan o la ejecución?"],
+ "🔥 Venganza/FOMO":["Para ya: es la causa número uno de cuentas quemadas.","Cierra la plataforma por hoy.","Pregúntate: ¿esta entrada está en mi plan o es emoción?"],
+ "😴 Cansado":["Un trader cansado comete errores. Considera no operar hoy.","Duerme bien y revisa mañana con la mente fresca."]};
+
+const $=id=>document.getElementById(id);
+const USERS_KEY="jj_accounts_recuperado_v3";
+const JACKSON_KEY="jackson";
+let currentUser=null,K="",S={cap:0,lim:0,days:{}},sel=null,emo=null,cm=new Date();cm.setDate(1);
+
+// Sincronización multidispositivo: usuario/contraseña + Supabase RPC, sin correo electrónico.
+const SUPABASE_URL="https://cqbeswfptbevwhkgaxci.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_AIWxgeIgFo6XISqMyKFCdQ_eylTkQ3v";
+let cloudToken=null,cloudDirty=false,cloudTimer=null,cloudWriting=false,cloudUpdatedAt=null,cloudPollTimer=null;
+const defaultData=()=>({cap:0,lim:0,limT:"$",mx:0,mxT:"$",goal:0,rules:"",days:{}});
+const clone=o=>JSON.parse(JSON.stringify(o));
+const accountKey=u=>String(u||"").trim().toLowerCase();
+// Acceso solo con nombre: la "clave" interna se deriva del nombre (el usuario no la ve)
+const normName=n=>String(n||"").trim().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/\s+/g,"_").replace(/[^A-Za-z0-9_.-]/g,"").slice(0,30);
+const passFor=u=>"jj::"+accountKey(u)+"::acceso";
+const SESSION_KEY="jj_session_v1",DIRTY_KEY="jj_dirty_v1";
+function persistSession(){try{localStorage.setItem(SESSION_KEY,JSON.stringify({token:cloudToken,username:currentUser}))}catch(e){}}
+function clearSession(){try{localStorage.removeItem(SESSION_KEY)}catch(e){}}
+
+// Conexión directa a Supabase REST. No depende de una librería externa y tiene
+// tiempo máximo de espera para que Iniciar sesión / Registrarme nunca queden congelados.
+async function cloudRpc(fn,args,timeoutMs=12000){
+ let timer;
+ const timeout=new Promise((_,rej)=>{timer=setTimeout(()=>rej(new Error("La conexión con la nube tardó demasiado. Revisa tu internet e inténtalo de nuevo.")),timeoutMs)});
+ const run=(async()=>{
+  let res;
+  try{
+   res=await fetch(SUPABASE_URL+"/rest/v1/rpc/"+encodeURIComponent(fn),{
+    method:"POST",
+    headers:{"apikey":SUPABASE_PUBLISHABLE_KEY,"Authorization":"Bearer "+SUPABASE_PUBLISHABLE_KEY,"Content-Type":"application/json","Accept":"application/json"},
+    body:JSON.stringify(args||{})
+   });
+  }catch(e){
+   let inFrame=false;try{inFrame=window.self!==window.top}catch(x){inFrame=true}
+   const where=inFrame?"DENTRO DE UN VISOR (iframe): descarga el archivo y ábrelo con doble clic en el navegador.":(location.protocol==="file:"?"archivo local (file://).":"página "+location.protocol.replace(":","")+".");
+   throw new Error("No se pudo conectar con Supabase ("+(e&&e.message?e.message:"error")+"). Estás abriendo la página como: "+where+" Internet: "+(navigator.onLine?"conectado":"SIN conexión")+".");
+  }
+  const text=await res.text();
+  let data=null;try{data=text?JSON.parse(text):null}catch(e){}
+  if(!res.ok){
+   const msg=(data&&(data.message||data.error_description||data.hint||data.details||data.error))||text||("HTTP "+res.status);
+   throw new Error(msg);
+  }
+  return data;
+ })();
+ try{return await Promise.race([run,timeout]);}
+ finally{clearTimeout(timer);}
+}
+
+const JACKSON_DATA={
+ cap:10000,lim:300,limT:"$",mx:600,mxT:"$",goal:0,rules:"",
+ days:{
+  "2026-09-29":{w:1,l:10,won:10,lost:105,note:"",trades:(()=>{const a=[{res:1,amt:10,emo:"😌 Calmado"}];for(let i=0;i<10;i++)a.push({res:-1,amt:10.484,emo:"😌 Calmado"});return a;})()},
+  "2026-09-30":{w:0,l:10,won:0,lost:68,note:"",trades:Array.from({length:10},()=>({res:-1,amt:6.8,emo:"😌 Calmado"}))},
+  "2026-10-01":{w:0,l:1,won:0,lost:21.76,note:"",trades:[{res:-1,amt:21.76,emo:"😌 Calmado"}]},
+  "2026-10-02":{w:0,l:0,won:0,lost:0,note:"",trades:[]}
+ }
+};
+function localLegacyAccounts(){try{const raw=localStorage.getItem(USERS_KEY);const v=raw?JSON.parse(raw):{};return v&&typeof v==="object"&&!Array.isArray(v)?v:{};}catch(e){return {};}}
+function legacyDataFor(u){const a=localLegacyAccounts()[accountKey(u)];if(a&&a.data)return clone(a.data);if(accountKey(u)===JACKSON_KEY)return clone(JACKSON_DATA);return defaultData();}
+function isEmptyData(d){return !d||!d.days||Object.keys(d.days).length===0;}
+function setCloudStatus(msg,ok=true){const el=$("cloudStatus");if(el){el.textContent=msg;el.className=ok?"g":"r";}const meta=$("saveMeta"),dot=$("saveDot");if(meta){meta.textContent=msg.includes("Guardando")?"Guardado local · sincronizando…":msg.includes("Sincronizado")?"Todo guardado y sincronizado":msg.includes("Sin conexión")?"Guardado local · sin conexión":"Guardado automático activo";dot?.classList.toggle("saving",msg.includes("Guardando"));}}
+function normalizeCloudResult(payload){
+ if(payload&&payload.ok===false)throw new Error(payload.error||"Error de la nube.");
+ if(payload&&payload.data&&payload.data.days!==undefined)return {data:payload.data,updated_at:payload.updated_at||null};
+ if(payload&&payload.days!==undefined)return {data:payload,updated_at:null};
+ return {data:defaultData(),updated_at:null};
+}
+async function cloudRpc(fn,args,timeoutMs=12000){
+ let timer;
+ const timeout=new Promise((_,rej)=>{timer=setTimeout(()=>rej(new Error("La conexión con la nube tardó demasiado. Revisa tu internet e inténtalo de nuevo.")),timeoutMs)});
+ const run=(async()=>{
+  let res;
+  try{
+   res=await fetch(SUPABASE_URL+"/rest/v1/rpc/"+encodeURIComponent(fn),{
+    method:"POST",
+    headers:{"apikey":SUPABASE_PUBLISHABLE_KEY,"Authorization":"Bearer "+SUPABASE_PUBLISHABLE_KEY,"Content-Type":"application/json","Accept":"application/json"},
+    body:JSON.stringify(args||{})
+   });
+  }catch(e){
+   let inFrame=false;try{inFrame=window.self!==window.top}catch(x){inFrame=true}
+   const where=inFrame?"DENTRO DE UN VISOR (iframe): descarga el archivo y ábrelo con doble clic en el navegador.":(location.protocol==="file:"?"archivo local (file://).":"página "+location.protocol.replace(":","")+".");
+   throw new Error("No se pudo conectar con Supabase ("+(e&&e.message?e.message:"error")+"). Estás abriendo la página como: "+where+" Internet: "+(navigator.onLine?"conectado":"SIN conexión")+".");
+  }
+  const text=await res.text();
+  let data=null;try{data=text?JSON.parse(text):null}catch(e){}
+  if(!res.ok){
+   const msg=(data&&(data.message||data.error_description||data.hint||data.details||data.error))||text||("HTTP "+res.status);
+   throw new Error(msg);
+  }
+  return data;
+ })();
+ try{return await Promise.race([run,timeout]);}
+ finally{clearTimeout(timer);}
+}
+async function cloudLoad(){if(!cloudToken)throw new Error("No hay sesión en la nube.");const raw=await cloudRpc("jj_get_data",{p_token:cloudToken});const out=normalizeCloudResult(raw);cloudUpdatedAt=out.updated_at||cloudUpdatedAt;return clone(out.data);}
+async function cloudSaveNow(){
+ if(!cloudToken||cloudWriting)return;
+ cloudWriting=true;
+ try{const sent=JSON.stringify(S);const raw=await cloudRpc("jj_save_data",{p_token:cloudToken,p_data:S});if(raw&&raw.ok===false)throw new Error(raw.error||"Error");cloudUpdatedAt=raw?.updated_at||cloudUpdatedAt;cloudDirty=false;if(JSON.stringify(S)===sent){try{localStorage.removeItem(DIRTY_KEY)}catch(e){}}setCloudStatus("☁️ Sincronizado",true);}
+ catch(e){setCloudStatus("☁️ Error al sincronizar",false);}
+ finally{cloudWriting=false;}
+}
+function queueCloudSave(){if(!cloudToken)return;cloudDirty=true;setCloudStatus("☁️ Guardando…",true);clearTimeout(cloudTimer);cloudTimer=setTimeout(()=>cloudSaveNow(),450);}
+async function cloudPull(){
+ if(cloudToken&&cloudDirty&&!cloudWriting&&!document.hidden){cloudSaveNow();return}
+ if(!cloudToken||cloudDirty||cloudWriting||document.hidden)return;
+ try{const fresh=await cloudLoad();if(JSON.stringify(fresh)!==JSON.stringify(S)){S=Object.assign(defaultData(),fresh);renderAll();}setCloudStatus("☁️ Sincronizado",true);}
+ catch(e){setCloudStatus("☁️ Sin conexión",false);}
+}
+function startCloudPolling(){clearInterval(cloudPollTimer);cloudPollTimer=setInterval(cloudPull,8000);}
+function stopCloudPolling(){clearInterval(cloudPollTimer);cloudPollTimer=null;}
+function renderAll(){
+ head();cal();mets();emoTab();mxRender();tools();jjRenderAI();
+ if(sel&&S.days[sel]){const d=S.days[sel];$("w").value=d.w??"";$("l").value=d.l??"";$("won").value=d.won??"";$("lost").value=d.lost??"";$("note").value=d.note||"";tr=(d.trades||[]).slice();closed=!!S.days[sel];renderTr(false);calc();sum();}
+}
+// ---- GUARDADO AUTOMÁTICO LOCAL: cada cambio se guarda en 2 lugares del navegador ----
+const IDB_NAME="jj_diario",IDB_STORE="kv";
+function idbOpen(){return new Promise((res,rej)=>{try{const r=indexedDB.open(IDB_NAME,1);r.onupgradeneeded=()=>r.result.createObjectStore(IDB_STORE);r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error);}catch(e){rej(e)}})}
+async function idbSet(k,v){const db=await idbOpen();return new Promise((res,rej)=>{const t=db.transaction(IDB_STORE,"readwrite");t.objectStore(IDB_STORE).put(v,k);t.oncomplete=()=>{db.close();res()};t.onerror=()=>rej(t.error);t.onabort=()=>rej(t.error)})}
+async function idbGet(k){const db=await idbOpen();return new Promise((res,rej)=>{const t=db.transaction(IDB_STORE,"readonly");const q=t.objectStore(IDB_STORE).get(k);q.onsuccess=()=>{db.close();res(q.result)};q.onerror=()=>rej(q.error)})}
+function markSaved(){setCloudStatus(cloudToken?"☁️ Guardando…":"💾 Guardado automático · "+new Date().toLocaleTimeString("es",{hour:"2-digit",minute:"2-digit",second:"2-digit"}),true)}
+function saveAccount(){
+ const pack={username:currentUser,data:clone(S),savedAt:Date.now()};
+ let okLS=false;
+ try{const a=localLegacyAccounts();a[K]=pack;localStorage.setItem(USERS_KEY,JSON.stringify(a));okLS=true;}catch(e){}
+ const localPromise=idbSet("acct:"+K,pack).then(()=>{if(!cloudToken)markSaved();}).catch(()=>{if(okLS&&!cloudToken)markSaved();else setCloudStatus("⚠️ NO se pudo guardar localmente. Revisa el estado del almacenamiento",false);});
+ if(cloudToken){
+  cloudDirty=true;
+  setCloudStatus("☁️ Guardando…",true);
+  clearTimeout(cloudTimer);
+  cloudTimer=setTimeout(()=>cloudSaveNow(),650);
+ }
+ return localPromise;
+}
+function loadAccount(u,dataOverride=null){currentUser=String(u||"").trim();K=accountKey(currentUser);S=dataOverride?Object.assign(defaultData(),clone(dataOverride)):clone(legacyDataFor(currentUser));}
+function ensureLegacyJacksonCache(){try{const a=localLegacyAccounts();if(!a[JACKSON_KEY]){a[JACKSON_KEY]={username:"Jackson",data:clone(JACKSON_DATA)};localStorage.setItem(USERS_KEY,JSON.stringify(a));}}catch(e){}}
+ensureLegacyJacksonCache();
+function setAuthMsg(msg,ok=false){$("authMsg").textContent=msg;$("authMsg").className="alert"+(ok?"":" r");$("authMsg").classList.toggle("hide",!msg);}
+function showAuthPanel(mode){$("loginPanel").classList.toggle("hide",mode!=="login");$("registerPanel").classList.toggle("hide",mode!=="register");setAuthMsg("");}
+function showApp(dataOverride=null){
+ if(dataOverride!==null)loadAccount(currentUser,dataOverride);
+ $("currentUser").textContent=currentUser;
+ $("authView").classList.add("hide");
+ $("appShell").classList.remove("hide");
+ renderAll();
+ persistSession();
+ startCloudPolling();
+}
+async function logout(){
+ clearTimeout(cloudTimer);
+ if(cloudToken){await cloudSaveNow().catch(()=>{});try{await cloudRpc("jj_logout",{p_token:cloudToken},8000);}catch(e){}}
+ stopCloudPolling();clearSession();cloudToken=null;cloudDirty=false;cloudUpdatedAt=null;currentUser=null;K="";S=defaultData();sel=null;tr=[];editTradeIndex=-1;
+ $("appShell").classList.add("hide");$("authView").classList.remove("hide");$("loginUser").value="";$("loginPass").value="";$("regUser").value="";$("regPass").value="";showAuthPanel("login");
+}
+function togglePassword(id,btn){const el=$(id),show=el.type==="password";el.type=show?"text":"password";btn.textContent=show?"🙈 Ocultar":"👁️ Mostrar"}
+$("toggleLoginPass").onclick=()=>togglePassword("loginPass",$("toggleLoginPass"));$("toggleRegPass").onclick=()=>togglePassword("regPass",$("toggleRegPass"));$("showRegister").onclick=()=>showAuthPanel("register");$("showLogin").onclick=()=>showAuthPanel("login");
+async function registerUser(){
+ const u=normName($("regUser").value),p=passFor(u);
+ if(!/^[A-Za-z0-9_.-]{3,30}$/.test(u)){setAuthMsg("Escribe tu nombre (mínimo 3 caracteres, letras o números).");return}
+ if(!p){setAuthMsg("Escribe una contraseña.");return}
+ if(p.length<6){setAuthMsg("La contraseña debe tener al menos 6 caracteres.");return}
+ $("registerBtn").disabled=true;setAuthMsg("Creando tu cuenta…",true);
+ try{
+  const raw=await cloudRpc("jj_register",{p_username:u,p_password:p});
+  if(!raw||raw.ok!==true)throw new Error((raw&&raw.error&&/existe/i.test(raw.error))?"Ese nombre ya está en uso. Si es tuyo, pulsa «Ya tengo una cuenta» y entra con él.":(raw?.error||"No se pudo crear la cuenta."));
+  if(!raw.token)throw new Error("La cuenta se creó pero la sesión no pudo iniciarse. Intenta entrar con tu usuario y contraseña.");
+  cloudToken=raw.token;currentUser=raw.username||u;K=accountKey(currentUser);cloudDirty=false;
+  const remote=await cloudLoad();
+  loadAccount(currentUser,remote);
+  $("regUser").value="";$("regPass").value="";
+  setAuthMsg("");showApp(remote);setCloudStatus("☁️ Sincronizado",true);
+ }catch(e){cloudToken=null;setAuthMsg(e.message||"No se pudo crear la cuenta.");}
+ finally{$("registerBtn").disabled=false;}
+}
+async function loginUser(){
+ const u=normName($("loginUser").value),p=passFor(u);
+ if(u.length<3){setAuthMsg("Escribe tu nombre (mínimo 3 caracteres).");return}
+ $("loginBtn").disabled=true;setAuthMsg("Entrando…",true);
+ try{
+  let raw=await cloudRpc("jj_login",{p_username:u,p_password:p});
+  if((!raw||raw.ok!==true)&&accountKey(u)==="jackson"){raw=await cloudRpc("jj_login",{p_username:u,p_password:"Jackson2026"});}
+  if(!raw||raw.ok!==true)throw new Error("No existe una cuenta con ese nombre. Si eres nuevo, pulsa «Crear una cuenta».");
+  if(!raw.token)throw new Error("La sesión no pudo iniciarse. Intenta de nuevo.");
+  cloudToken=raw.token;currentUser=raw.username||u;K=accountKey(currentUser);cloudDirty=false;
+  let remote=await cloudLoad();
+  const legacy=legacyDataFor(currentUser);
+  if(isEmptyData(remote)&&!isEmptyData(legacy)){S=clone(legacy);await cloudSaveNow();remote=clone(S);}
+  showApp(remote);setAuthMsg("");setCloudStatus("☁️ Sincronizado",true);
+ }catch(e){cloudToken=null;setAuthMsg(e.message||"No se pudo iniciar sesión en la nube.");}
+ finally{$("loginBtn").disabled=false;}
+}
+$("registerBtn").onclick=registerUser;$("loginBtn").onclick=loginUser;$("logout").onclick=()=>logout();$("newAccount").onclick=async()=>{await logout();showAuthPanel("register")};$("loginPass").onkeydown=e=>{if(e.key==="Enter")$("loginBtn").click()};$("regPass").onkeydown=e=>{if(e.key==="Enter")$("registerBtn").click()};document.addEventListener("visibilitychange",()=>{if(!document.hidden)cloudPull()});
+const save=()=>saveAccount();
+const $$=n=>(n<0?"-":"")+"$"+Math.abs(Number(n)||0).toLocaleString("es",{maximumFractionDigits:2});
+const cl=n=>n>0?"g":n<0?"r":"";
+function dayStats(d){
+ const ts=Array.isArray(d?.trades)?d.trades:[];
+ if(ts.length){
+  let W=0,L=0,D=0,GW=0,GL=0,neto=0;
+  ts.forEach(t=>{const r=Number(t.res)||0,a=Math.abs(Number(t.amt)||0);neto+=r*a;if(r>0){W++;GW+=a}else if(r<0){L++;GL+=a}else D++});
+  return {W,L,D,GW,GL,neto,total:ts.length};
+ }
+ const W=Number(d?.w)||0,L=Number(d?.l)||0,D=Math.max(0,(Number(d?.trades?.length)||0)-W-L);
+ const GW=Math.abs(Number(d?.won)||0),GL=Math.abs(Number(d?.lost)||0);
+ return {W,L,D,GW,GL,neto:GW-GL,total:W+L+D};
+}
+const net=d=>dayStats(d).neto;
+const key=(y,m,d)=>y+"-"+String(m+1).padStart(2,"0")+"-"+String(d).padStart(2,"0");
+const today=()=>{const t=new Date();return key(t.getFullYear(),t.getMonth(),t.getDate())};
+
+const capAt=k=>(+S.cap||0)+Object.keys(S.days).filter(x=>x<k).reduce((a,x)=>a+net(S.days[x]),0);
+const limD=k=>{const v=+S.lim||0;return S.limT==="%"?capAt(k)*v/100:v};
+const floor=()=>{const v=+S.mx||0,c=+S.cap||0;return v?c-(S.mxT==="%"?c*v/100:v):null};
+function head(){
+ [["cap","cap"],["lim","lim"],["mx","mx"]].forEach(([i,k])=>{if(document.activeElement!==$(i))$(i).value=S[k]||""});
+ $("limT").value=S.limT||"$";$("mxT").value=S.mxT||"$";
+ const tot=Object.values(S.days).reduce((a,d)=>a+net(d),0),c=(+S.cap||0)+tot;
+ $("cur").textContent=$$(c);$("cur").className="big "+cl(tot);
+ $("sub").textContent="Resultado total: "+$$(tot);
+ const msgs=[],td=S.days[today()],ld=limD(today());
+ if(ld>0&&td&&net(td)<=-ld)msgs.push("⛔ Límite de pérdida diaria alcanzado ("+$$(ld)+"). Deja de operar por hoy.");
+ const f=floor();
+ if(f!==null){const mA=(+S.cap||0)-f,u=Math.max(0,(+S.cap||0)-c),p=mA>0?Math.min(100,u/mA*100):0;
+  $("mxb").innerHTML=`<div class="mu" style="font-size:12px;display:flex;justify-content:space-between"><span>Pérdida máx. de cuenta: ${$$(mA)} (piso ${$$(f)})</span><span>${p.toFixed(0)}% usado</span></div><div class="bar"><i style="width:${p}%;background:${p>80?"var(--r)":p>50?"var(--ac)":"var(--g)"}"></i></div>`;
+  if(c<=f)msgs.push("🚨 Llegaste al límite máximo de pérdida de la cuenta. Detén el trading y revisa tu plan.")}else $("mxb").innerHTML="";
+ const a=$("alert");a.innerHTML=msgs.join("<br>");a.classList.toggle("hide",!msgs.length);
+}
+function cal(){
+ const y=cm.getFullYear(),m=cm.getMonth();
+ $("mt").textContent=cm.toLocaleDateString("es",{month:"long",year:"numeric"});
+ let h=["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"].map(x=>`<div class="dh">${x}</div>`).join("");
+ const off=(new Date(y,m,1).getDay()+6)%7,n=new Date(y,m+1,0).getDate();
+ for(let i=0;i<off;i++)h+='<div class="d e"></div>';
+ let mt=0,mtr=0;const wk=[];
+ for(let d=1;d<=n;d++){
+  const k=key(y,m,d),r=S.days[k];let c="d",b="";
+  if(r){const v=net(r);mt+=v;wk[Math.floor((off+d-1)/7)]=(wk[Math.floor((off+d-1)/7)]||0)+v;const ds=dayStats(r);mtr+=ds.total;c+=v>0?" p":v<0?" n":"";
+   b=`<div class="${cl(v)}">${$$(v)}${limD(k)>0&&v<=-limD(k)?" ⚠":""}</div><div class="mu">${ds.total} trades</div>`}
+  if(k===today())c+=" t";if(k===sel)c+=" sel";
+  h+=`<div class="${c}" data-k="${k}"><b>${d}</b>${b}</div>`}
+ $("cal").innerHTML=h;
+ $("wk").innerHTML=wk.map((v,i)=>`<span class="chip ${cl(v)}">Sem ${i+1}: ${$$(v)}</span>`).join("");
+ $("mtot").innerHTML=`Mes: <b class="${cl(mt)}">${$$(mt)}</b> · ${mtr} trades`;
+ document.querySelectorAll(".d[data-k]").forEach(e=>e.onclick=()=>open(e.dataset.k));
+}
+function emoBtns(id,cb,on){
+ $(id).innerHTML=Object.keys(E).map(e=>`<button class="${e===on?"on":""}" data-e="${e}">${e}</button>`).join("");
+ $(id).querySelectorAll("button").forEach(b=>b.onclick=()=>cb(b.dataset.e));
+}
+const tip=e=>e?`<div class="tip"><b>${e}</b><ul>${E[e].map(t=>`<li>${t}</li>`).join("")}</ul></div>`:"";
+function open(k){
+ sel=k;const d=S.days[k]||{};emo=null;
+ $("ed").classList.remove("hide");
+ $("edt").textContent="📅 "+new Date(k+"T12:00").toLocaleDateString("es",{weekday:"long",day:"numeric",month:"long"});
+ $("w").value=d.w??"";$("l").value=d.l??"";$("won").value=d.won??"";$("lost").value=d.lost??"";$("note").value=d.note||"";
+ tr=(d.trades||[]).slice();closed=!!S.days[k];resetTradeForm();renderTr(false);calc();cal();showDay();
+}
+let tr=[],closed=false,editTradeIndex=-1;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const tradeMeta=r=>r>0?{label:"🟢 Ganador",cls:"g",border:"var(--g)",sign:"+"}:r<0?{label:"🔴 Perdedor",cls:"r",border:"var(--r)",sign:"-"}:{label:"⚪ Empate",cls:"",border:"var(--ac)",sign:"="};
+function resetTradeForm(){editTradeIndex=-1;$("tadd").textContent="+ Guardar trade";$("tcancel").classList.add("hide");$("tamt").value="";$("thh").value="";$("tsetup").value="";$("terr").value="";$("tw").value="";$("tn").value="";$("tim").value="";$("tas").value="";$("tr").value="1";pimg="";$("tpv").src="";$("tpv").classList.add("hide")}
+function cancelTradeEdit(){resetTradeForm()}
+function editTrade(i){const t=tr[i];if(!t)return;editTradeIndex=i;$("tas").value=t.asset||"";$("tr").value=String(t.res);$("tamt").value=t.amt??"";$("thh").value=t.hh||"";$("tsetup").value=t.setup||"";$("terr").value=t.err||"";$("te").value=t.emo||Object.keys(E)[0];$("tw").value=t.why||"";$("tn").value=t.note||"";pimg=t.img||"";if(pimg){$("tpv").src=pimg;$("tpv").classList.remove("hide")}else{$("tpv").src="";$("tpv").classList.add("hide")}$("tadd").textContent="✏️ Actualizar trade";$("tcancel").classList.remove("hide");$("tamt").focus()}
+function dom(){const c={};tr.forEach(t=>{c[t.emo]=(c[t.emo]||0)+1});const a=Object.entries(c).sort((x,y)=>y[1]-x[1]);return a.length?{e:a[0][0],n:a[0][1],all:a}:null}
+function renderTr(sync){
+ $("tl").innerHTML=tr.map((t,i)=>{const m=tradeMeta(t.res);return `<div class="tip" style="border-color:${m.border};margin:0 0 8px;background:color-mix(in srgb,${m.border} 10%,var(--bg))"><b class="${m.cls}">#${i+1} ${m.label} ${m.sign}${$$(t.amt)}</b> · ${esc(t.asset||"Sin activo")} · ${t.emo||""}<div>${esc(t.why||"Sin explicación")}</div>${(t.hh||t.setup||t.err)?`<div class="mu" style="margin-top:3px">${t.hh?`🕒 ${esc(t.hh)} `:""}${t.setup?`· Setup: ${esc(t.setup)} `:""}${t.err?`· Error: ${esc(t.err)}`:""}</div>`:""}${t.note?`<div class="mu">📝 ${esc(t.note)}</div>`:""}${t.img?`<img class="thumb" src="${t.img}">`:""}<div style="display:flex;gap:6px;margin-top:6px"><button class="s" data-i="${i}" data-action="edit" style="padding:3px 8px">Editar</button><button class="s" data-i="${i}" data-action="remove" style="padding:3px 8px">Quitar</button></div></div>`}).join("");
+ $("tl").querySelectorAll("img").forEach(m=>m.onclick=()=>m.style.maxHeight=m.style.maxHeight==="none"?"140px":"none");
+ $("tl").querySelectorAll("button").forEach(b=>b.onclick=()=>{const i=+b.dataset.i;if(b.dataset.action==="edit"){editTrade(i);return}tr.splice(i,1);if(editTradeIndex===i)resetTradeForm();else if(editTradeIndex>i)editTradeIndex--;renderTr(true);persist()});
+ if(sync){let w=0,l=0,a=0,b=0;tr.forEach(t=>{if(t.res>0){w++;a+=t.amt}else if(t.res<0){l++;b+=t.amt}});$("w").value=w;$("l").value=l;$("won").value=a;$("lost").value=b;calc()}
+ sum();
+}
+function sum(){const d=dom();if(!d){$("sum").innerHTML="";return}
+ const N=tr.length;
+ const rows=d.all.map(([e,n])=>{const v=tr.filter(t=>t.emo===e).reduce((x,t)=>x+t.res*t.amt,0);return `<div style="display:flex;justify-content:space-between;gap:8px"><span>${e} × ${n}</span><span class="${cl(v)}">${$$(v)}</span></div><div style="height:6px;border-radius:3px;background:var(--ac);width:${n/N*100}%;margin-bottom:6px"></div>`}).join("");
+ $("sum").innerHTML=`<div class="card" style="margin:10px 0"><h3>${closed?"✅ Día finalizado · ":"🧠 "}Resumen emocional del día</h3>${rows}<div>Emoción más relevante: <b>${d.e}</b> (${d.n} de ${N} trades)</div>${tip(d.e)}</div>`}
+$("te").innerHTML=Object.keys(E).map(e=>`<option>${e}</option>`).join("");
+let pimg="";
+$("tim").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const im=new Image();im.onload=()=>{const m=Math.min(1,900/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=im.width*m;c.height=im.height*m;c.getContext("2d").drawImage(im,0,0,c.width,c.height);pimg=c.toDataURL("image/jpeg",.6);$("tpv").src=pimg;$("tpv").classList.remove("hide")};im.src=r.result};r.readAsDataURL(f)};
+ $("tadd").onclick=()=>{const a=+$("tamt").value;if(!(a>0)){$("tamt").focus();return}
+ const item={res:+$("tr").value,amt:a,hh:$("thh").value||"",setup:$("tsetup").value.trim(),err:$("terr").value.trim(),emo:$("te").value,why:$("tw").value,asset:$("tas").value.trim().toUpperCase(),note:$("tn").value,img:pimg};
+ if(editTradeIndex>=0)tr[editTradeIndex]=item;else tr.push(item);
+ renderTr(true);persist();resetTradeForm();mtAfterSave()};
+$("tcancel").onclick=cancelTradeEdit;
+/* === Ventana del día === */
+function showDay(){$("edBack").classList.remove("hide");$("ed").classList.remove("hide");$("ed").scrollTop=0;document.body.style.overflow="hidden"}
+function closeDay(){$("ed").classList.add("hide");$("edBack").classList.add("hide");document.body.style.overflow="";mtReset()}
+$("edClose").onclick=closeDay;$("edBack").onclick=closeDay;
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("ed").classList.contains("hide"))closeDay()});
+
+/* === Importar captura MT5 (OCR + color rojo/azul) === */
+let mtQueue=[],mtTotal=0,mtDone=0;
+const mtSt=(m)=>{const el=$("mtStatus");el.textContent=m||"";el.classList.toggle("hide",!m)};
+function mtReset(){mtQueue=[];mtTotal=0;mtDone=0;$("mtBar").classList.add("hide")}
+function mtLoadLib(){return window.Tesseract?Promise.resolve():new Promise((res,rej)=>{const sc=document.createElement("script");sc.src="https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js";sc.onload=res;sc.onerror=()=>rej(new Error("offline"));document.head.appendChild(sc)})}
+function mtColor(cv,b){const x0=Math.max(0,Math.floor(b.x0)),y0=Math.max(0,Math.floor(b.y0)),w=Math.min(cv.width-x0,Math.ceil(b.x1-b.x0)),h=Math.min(cv.height-y0,Math.ceil(b.y1-b.y0));if(w<=0||h<=0)return null;const d=cv.getContext("2d").getImageData(x0,y0,w,h).data;let r=0,u=0;for(let i=0;i<d.length;i+=4){const R=d[i],G=d[i+1],B=d[i+2];if(R-Math.max(G,B)>70)r++;else if(B-R>50&&B>=G-10)u++}if(r<4&&u<4)return null;return r>=u?"r":"b"}
+function mtNum(t){let x=String(t).replace(/[−–—]/g,"-").replace(/\s/g,"");if(!/^[-+]?\d[\d,.]*\d$|^[-+]?\d$/.test(x))return null;if(x.includes(",")&&x.includes("."))x=x.replace(/,/g,"");else if(x.includes(",")){x=/,\d{2}$/.test(x)?x.replace(",","."):x.replace(/,/g,"")}const n=parseFloat(x);return isNaN(n)?null:n}
+const MT_SKIP=new Set(["buy","sell","in","out","balance","time","deal","order","type","symbol","profit","swap","volume","price","commission","comment","position"]);
+function mtParseLines(lines,cv){const out=[],re=/(\d{4})[.\-\/](\d{2})[.\-\/](\d{2})\s+(\d{2}):(\d{2})(?::(\d{2}))?/g;
+ for(const ln of lines){const ws=(ln.words||[]).filter(w=>w.text&&w.text.trim());if(!ws.length)continue;const txt=ws.map(w=>w.text).join(" ");if(/balance|deposit|credit/i.test(txt)&&!/buy|sell/i.test(txt))continue;
+  const ts=[...txt.matchAll(re)];if(!ts.length)continue;
+  const sym=ws.map(w=>w.text.replace(/[^A-Za-z0-9._#]/g,"")).find(t=>/^[A-Za-z][A-Za-z0-9._#]{2,}$/.test(t)&&!MT_SKIP.has(t.toLowerCase())&&!/^\d/.test(t));
+  const nums=ws.map(w=>({w,n:mtNum(w.text)})).filter(o=>o.n!==null&&/[.,]\d{2}$/.test(o.w.text.replace(/\s/g,"")));
+  if(!sym||!nums.length)continue;
+  let pick=null;for(let i=nums.length-1;i>=0;i--){const c=mtColor(cv,nums[i].w.bbox);if(c){pick={o:nums[i],c};break}}
+  if(!pick){const o=nums[nums.length-1];pick={o,c:o.n<0?"r":(o.n>0?"b":null)}}
+  const amt=Math.abs(pick.o.n);const res=amt===0?0:(pick.c==="r"?-1:1);
+  const t0=ts[0];out.push({asset:sym.toUpperCase(),res,amt,hh:t0[4]+":"+t0[5],date:t0[1]+"-"+t0[2]+"-"+t0[3],sort:t0[1]+t0[2]+t0[3]+t0[4]+t0[5]+(t0[6]||"00")})}
+ out.sort((a,b)=>a.sort<b.sort?-1:a.sort>b.sort?1:0);
+ return out.filter((t,i)=>out.findIndex(u=>u.sort===t.sort&&u.asset===t.asset&&u.amt===t.amt&&u.res===t.res)===i)}
+function mtNext(){if(!mtQueue.length){mtSt("✅ Listo: revisaste las "+mtTotal+" operaciones del MT5.");$("mtBar").classList.add("hide");return}
+ const t=mtQueue.shift();mtDone++;resetTradeForm();$("tas").value=t.asset;$("tr").value=String(t.res);$("tamt").value=t.amt;$("thh").value=t.hh;
+ $("mtIdx").textContent=mtDone;$("mtTot").textContent=mtTotal;$("mtInfo").textContent=t.date.replace(/-/g,".")+" "+t.hh+" · "+t.asset+(sel&&t.date!==sel?" ⚠️ fecha distinta al día abierto":"");$("mtBar").classList.remove("hide");
+ $("te").scrollIntoView({block:"center",behavior:"smooth"});$("te").focus()}
+function mtAfterSave(){if($("mtBar").classList.contains("hide")&&!mtQueue.length)return;mtNext()}
+$("mtSkip").onclick=()=>mtNext();
+$("mtCancel").onclick=()=>{mtReset();resetTradeForm();mtSt("Importación cancelada.")};
+$("mtFile").onchange=async e=>{const f=e.target.files[0];if(!f)return;mtReset();
+ try{mtSt("Cargando lector de texto…");await mtLoadLib()}catch(err){mtSt("⚠️ Necesito internet la primera vez para leer la captura. Conéctate y vuelve a intentar.");e.target.value="";return}
+ try{const img=await new Promise((res,rej)=>{const im=new Image();im.onload=()=>res(im);im.onerror=rej;im.src=URL.createObjectURL(f)});
+  const sc=Math.min(2.5,Math.max(1,2400/Math.max(img.width,1)));const cv=document.createElement("canvas");cv.width=Math.round(img.width*sc);cv.height=Math.round(img.height*sc);cv.getContext("2d").drawImage(img,0,0,cv.width,cv.height);
+  const wk=await Tesseract.createWorker("eng",1,{logger:m=>{if(m.status==="recognizing text")mtSt("Leyendo captura… "+Math.round(m.progress*100)+"%")}});
+  const {data}=await wk.recognize(cv);await wk.terminate();
+  let lines=data.lines;if(!lines||!lines.length){lines=[];(data.blocks||[]).forEach(b=>(b.paragraphs||[]).forEach(p=>(p.lines||[]).forEach(l=>lines.push(l))))}
+  let found=mtParseLines(lines,cv);
+  const dup=t=>tr.some(x=>x.asset===t.asset&&Number(x.amt)===t.amt&&(x.hh||"")===t.hh&&x.res===t.res);
+  const before=found.length;found=found.filter(t=>!dup(t));
+  if(!found.length){mtSt(before?"Todas las operaciones de la captura ya estaban registradas.":"No pude detectar operaciones. Asegúrate de que se vea la tabla con fecha, símbolo y ganancia, o llénalas a mano.");e.target.value="";return}
+  mtQueue=found;mtTotal=found.length;mtDone=0;mtSt("Detecté "+found.length+" operación(es). Revísalas una por una:");mtNext()
+ }catch(err){console.error(err);mtSt("⚠️ No pude leer la captura. Prueba con una imagen más grande o nítida.")}
+ e.target.value=""};
+
+function persist(fin){if(!sel)return;if(fin)closed=true;
+ const d={w:+$("w").value||0,l:+$("l").value||0,won:+$("won").value||0,lost:+$("lost").value||0,note:$("note").value,trades:tr};
+ if(!tr.length&&!d.w&&!d.l&&!d.won&&!d.lost&&!d.note&&!d.emo)delete S.days[sel];else S.days[sel]=d;
+ save();head();cal();mets();emoTab();mxRender();sum();jjRenderAI()}
+let jjDayAutoTimer=null;
+function autosaveCurrentDayInputs(){
+ if(!sel)return;
+ clearTimeout(jjDayAutoTimer);
+ jjDayAutoTimer=setTimeout(()=>{
+  const d=S.days[sel]||{trades:tr.slice()};
+  d.w=+$('w').value||0; d.l=+$('l').value||0;
+  d.won=+$('won').value||0; d.lost=+$('lost').value||0;
+  d.note=$('note').value||''; d.trades=tr.slice();
+  S.days[sel]=d;
+  calc();
+  save();
+  head(); cal(); mets(); emoTab(); jjRenderAI();
+ },220);
+}
+['w','l','won','lost','note'].forEach(id=>{
+ const el=$(id);
+ if(el){el.addEventListener('input',autosaveCurrentDayInputs);el.addEventListener('change',autosaveCurrentDayInputs);}
+});
+async function saveEverythingNow(){
+ const btn=$('saveAll');
+ if(btn)btn.classList.add('saving');
+ if(sel){
+  clearTimeout(jjDayAutoTimer);
+  const d=S.days[sel]||{trades:tr.slice()};
+  d.w=+$('w').value||0; d.l=+$('l').value||0; d.won=+$('won').value||0; d.lost=+$('lost').value||0;
+  d.note=$('note').value||''; d.trades=tr.slice(); S.days[sel]=d;
+ }
+ try{
+  await saveAccount();
+  clearTimeout(cloudTimer);
+  if(cloudToken){cloudDirty=true;await cloudSaveNow();}
+  head();cal();mets();emoTab();mxRender();sum();jjRenderAI();
+  const meta=$('saveMeta'),dot=$('saveDot');
+  if(meta)meta.textContent='✅ Todo guardado automáticamente · '+new Date().toLocaleTimeString('es',{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+  if(dot)dot.classList.remove('saving');
+ }catch(e){
+  setCloudStatus('⚠️ No se pudo completar el guardado',false);
+ }finally{if(btn){btn.classList.remove('saving');btn.blur();}}
+}
+function jjSyncVisibleDayIntoState(){
+ if(!sel)return;
+ clearTimeout(jjDayAutoTimer);
+ const d=S.days[sel]||{trades:tr.slice()};
+ d.w=+$('w').value||0; d.l=+$('l').value||0; d.won=+$('won').value||0; d.lost=+$('lost').value||0;
+ d.note=$('note').value||''; d.trades=tr.slice();
+ S.days[sel]=d;
+}
+function jjBackupStats(data){
+ const days=Object.keys(data?.days||{});
+ let trades=0,images=0;
+ days.forEach(k=>{
+  const ts=Array.isArray(data.days[k]?.trades)?data.days[k].trades:[];
+  trades+=ts.length;
+  ts.forEach(t=>{if(t&&t.img)images++;});
+ });
+ return {days:days.length,trades,images};
+}
+function jjDownloadBlob(blob,filename){
+ const url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download=filename;a.style.display='none';document.body.appendChild(a);a.click();a.remove();
+ setTimeout(()=>URL.revokeObjectURL(url),1500);
+}
+async function jjExportFullBackup(sourceButton){
+ if(sourceButton)sourceButton.classList.add('saving');
+ try{
+  jjSyncVisibleDayIntoState();
+  await saveAccount();
+  if(cloudToken){clearTimeout(cloudTimer);cloudDirty=true;await cloudSaveNow();}
+  const payload={
+   format:'Journal Jackson Backup',
+   formatVersion:1,
+   exportedAt:new Date().toISOString(),
+   appVersion:'A1',
+   username:currentUser||'Jackson',
+   includes:['calendario','operaciones','notas','emociones','metas','reglas','configuracion','capturas_de_pantalla'],
+   data:clone(S)
+  };
+  const json=JSON.stringify(payload,null,2);
+  const stamp=new Date().toISOString().slice(0,10);
+  const safeUser=String(currentUser||'Jackson').replace(/[^a-z0-9_-]+/gi,'_');
+  jjDownloadBlob(new Blob([json],{type:'application/json;charset=utf-8'}),`Journal_Jackson_${safeUser}_${stamp}.json`);
+  const st=jjBackupStats(payload.data);
+  if($('jjBackupInfo'))$('jjBackupInfo').textContent=`✅ Archivo creado · ${st.days} días · ${st.trades} trades · ${st.images} capturas incluidas · ${Math.round(json.length/1024)} KB`;
+  setCloudStatus('✅ Archivo completo guardado',true);
+ }catch(e){
+  setCloudStatus('⚠️ No se pudo crear el archivo completo',false);
+  alert('No se pudo guardar el archivo completo. '+(e?.message||'Revisa el espacio disponible e inténtalo de nuevo.'));
+ }finally{if(sourceButton)sourceButton.classList.remove('saving');}
+}
+function jjValidateBackup(payload){
+ if(!payload||typeof payload!=='object')throw new Error('El archivo no contiene datos válidos.');
+ if(payload.format!=='Journal Jackson Backup')throw new Error('Este archivo no es un respaldo válido de Journal Jackson.');
+ if(!payload.data||typeof payload.data!=='object')throw new Error('El respaldo está incompleto.');
+ if(!payload.data.days||typeof payload.data.days!=='object'||Array.isArray(payload.data.days))throw new Error('El respaldo no contiene el calendario.');
+ return payload;
+}
+async function jjImportFullBackup(file){
+ if(!file)return;
+ try{
+  const raw=await file.text();
+  const payload=jjValidateBackup(JSON.parse(raw));
+  const st=jjBackupStats(payload.data);
+  const ok=confirm(`Vas a cargar un respaldo completo:\n\n${st.days} días · ${st.trades} trades · ${st.images} capturas\nExportado: ${payload.exportedAt?new Date(payload.exportedAt).toLocaleString('es'): 'fecha no disponible'}\n\nEsto reemplazará los datos actuales de este Journal.\n\n¿Continuar?`);
+  if(!ok)return;
+  jjSyncVisibleDayIntoState();
+  S=Object.assign(defaultData(),clone(payload.data));
+  sel=null;tr=[];editTradeIndex=-1;
+  const first=Object.keys(S.days||{}).sort()[0];
+  if(first)sel=first;
+  renderAll();
+  if(sel&&S.days[sel])open(sel); else {head();cal();mets();emoTab();mxRender();jjRenderAI();}
+  await saveAccount();
+  if(cloudToken){clearTimeout(cloudTimer);cloudDirty=true;await cloudSaveNow();}
+  if($('jjBackupInfo'))$('jjBackupInfo').textContent=`✅ Archivo cargado · ${st.days} días · ${st.trades} trades · ${st.images} capturas restauradas`;
+  setCloudStatus('✅ Respaldo cargado y guardado',true);
+ }catch(e){
+  setCloudStatus('⚠️ Archivo no válido',false);
+  alert(e?.message||'No se pudo cargar el archivo.');
+ }finally{
+  const inp=$('jjBackupInput');if(inp)inp.value='';
+ }
+}
+function jjOpenBackupPicker(){const inp=$('jjBackupInput');if(inp)inp.click();}
+$('saveAll').onclick=()=>jjExportFullBackup($('saveAll'));
+$('loadAll').onclick=jjOpenBackupPicker;
+$('saveAllTools').onclick=()=>jjExportFullBackup($('saveAllTools'));
+$('loadAllTools').onclick=jjOpenBackupPicker;
+$('jjBackupInput').onchange=e=>jjImportFullBackup(e.target.files?.[0]);
+function addNewTradeFromTop(){
+  const target=sel&&S.days[sel]?sel:today();
+  open(target);
+  setTimeout(()=>{const asset=$('tas');if(asset){asset.focus();asset.select?.();}},120);
+}
+$('addTop').onclick=addNewTradeFromTop;
+
+function calc(){
+  const v=(+$("won").value||0)-(+$("lost").value||0),t=tr.length||((+$("w").value||0)+(+$("l").value||0));
+ $("net").textContent=$$(v);$("net").className="big "+cl(v);
+ const L=sel?limD(sel):0;$("lmsg").innerHTML=L>0?(v<=-L?`<b class="r">⛔ Límite diario (${$$(L)}) alcanzado: deja de operar.</b>`:`Límite diario: ${$$(L)} · usado ${$$(Math.max(0,-v))}`):"";
+ document.querySelector("#ed .card span").textContent="Resultado del día ("+t+" trades)";
+}
+["w","l","won","lost"].forEach(i=>$(i).oninput=calc);
+$("sv").onclick=()=>{persist(true);};
+$("dl").onclick=()=>{if(sel){delete S.days[sel];save();open(sel);head();cal();mets();emoTab()}};
+$("cap").oninput=e=>{S.cap=+e.target.value||0;save();head();mets()};
+[["lim","lim"],["mx","mx"]].forEach(([i,k])=>$(i).oninput=e=>{S[k]=+e.target.value||0;save();head();cal();calc()});
+$("limT").onchange=e=>{S.limT=e.target.value;save();head();cal();calc()};
+$("mxT").onchange=e=>{S.mxT=e.target.value;save();head();mets()};
+$("pv").onclick=()=>{cm.setMonth(cm.getMonth()-1);cal()};
+$("nx").onclick=()=>{cm.setMonth(cm.getMonth()+1);cal()};
+
+
+let mxChartMode="accum";
+let mxPeriod="all";
+function mxMoney(n){return $$(n);}
+function mxDate(k){const p=k.split('-');return p[2]+"/"+p[1];}
+function mxData(){
+ const ks=Object.keys(S.days).sort();
+ let use=ks;
+ if(mxPeriod==="month"){const cut=new Date();cut.setDate(cut.getDate()-29);const c=key(cut.getFullYear(),cut.getMonth(),cut.getDate());use=ks.filter(k=>k>=c)}
+ if(mxPeriod==="week"){const cut=new Date();cut.setDate(cut.getDate()-6);const c=key(cut.getFullYear(),cut.getMonth(),cut.getDate());use=ks.filter(k=>k>=c)}
+ return {ks:use,ds:use.map(k=>S.days[k])};
+}
+function mxDrawCurve(id,values,labels,opt={}){
+ const svg=$(id);if(!svg)return;
+ const W=900,H=250,L=42,R=12,T=20,B=32,iw=W-L-R,ih=H-T-B;
+ if(!values.length){svg.innerHTML='<text x="450" y="125" text-anchor="middle" class="axis-text" fill="currentColor">Registra operaciones en el calendario para ver la curva</text>';return;}
+ let mn=Math.min(...values),mx=Math.max(...values);if(opt.zero){mn=Math.min(mn,0);mx=Math.max(mx,0)}
+ if(mn===mx){mn-=1;mx+=1}
+ const x=i=>L+(i/Math.max(values.length-1,1))*iw,y=v=>T+(1-(v-mn)/(mx-mn))*ih;
+ const pts=values.map((v,i)=>`${x(i).toFixed(1)},${y(v).toFixed(1)}`).join(' ');
+ const zeroY=y(0);
+ const fillY=opt.zero?zeroY:H-B;
+ const color=opt.color||'var(--g)';
+ const negColor=opt.negColor||'var(--r)';
+ const grid=[0,.25,.5,.75,1].map(q=>{const v=mn+(mx-mn)*q;return `<line class="gridline" x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}"/><text class="axis-text" x="4" y="${y(v)+4}">${opt.money?mxMoney(v):Math.round(v)+(opt.percent?'%':'')}</text>`}).join('');
+ const marks=labels.map((lab,i)=>{const step=labels.length>8?Math.ceil(labels.length/8):1;return (i%step===0||i===labels.length-1)?`<text class="axis-text" x="${x(i)}" y="${H-7}" text-anchor="middle">${lab}</text>`:''}).join('');
+ const points=values.map((v,i)=>`<circle class="curve-point" cx="${x(i)}" cy="${y(v)}" r="${values.length>40?3:4.2}" fill="${opt.pointColor||color}"${v<0&&opt.splitNeg?' fill="'+negColor+'"':''}><title>${labels[i]} · ${opt.money?mxMoney(v):opt.percent?v.toFixed(1)+'%':Math.round(v)}</title></circle>`).join('');
+ let pathFill='';
+ if(opt.zero){pathFill=`<polygon class="curve-fill" fill="${color}" points="${x(0)},${zeroY} ${pts} ${x(values.length-1)},${zeroY}"/>`}
+ else{pathFill=`<polygon class="curve-fill" fill="${color}" points="${x(0)},${H-B} ${pts} ${x(values.length-1)},${H-B}"/>`}
+ const zeroLine=opt.zero?`<line class="zero" x1="${L}" x2="${W-R}" y1="${zeroY}" y2="${zeroY}"/>`:'';
+ svg.innerHTML=grid+zeroLine+pathFill+`<polyline class="curve-line" points="${pts}" stroke="${color}"/>`+points+marks;
+}
+function mxDrawMain(values,labels){
+ const svg=$("mxChart");if(!svg)return;
+ const W=900,H=280,L=38,R=12,T=20,B=35,iw=W-L-R,ih=H-T-B;
+ if(!values.length){svg.innerHTML='<text x="450" y="140" text-anchor="middle" class="metric-axis">Registra operaciones en el calendario para ver el rendimiento</text>';return;}
+ let mn=Math.min(...values),mx=Math.max(...values);if(mn===mx){mn-=1;mx+=1}
+ const x=i=>L+(i/Math.max(values.length-1,1))*iw,y=v=>T+(1-(v-mn)/(mx-mn))*ih;
+ const pts=values.map((v,i)=>`${x(i)},${y(v)}`).join(' ');
+ const color=values[values.length-1]>=values[0]?'#22c55e':'#ef4444';
+ const ticks=[0,.25,.5,.75,1].map(q=>{const v=mn+(mx-mn)*q;return `<line x1="${L}" x2="${W-R}" y1="${y(v)}" y2="${y(v)}" stroke="#252b33" stroke-dasharray="3 6"/><text x="4" y="${y(v)+4}" class="metric-axis">${mxMoney(v)}</text>`}).join('');
+ const step=labels.length>8?Math.ceil(labels.length/8):1;
+ const labs=labels.map((lab,i)=>(i%step===0||i===labels.length-1)?`<text x="${x(i)}" y="${H-8}" text-anchor="middle" class="metric-axis">${lab}</text>`:'').join('');
+ const ptsSvg=values.map((v,i)=>`<circle class="metric-point ${v<0?'neg':''}" cx="${x(i)}" cy="${y(v)}" r="${values.length>40?3.2:4.5}"><title>${labels[i]} · ${mxMoney(v)}</title></circle>`).join('');
+ svg.innerHTML=ticks+`<polygon points="${L},${H-B} ${pts} ${x(values.length-1)},${H-B}" fill="${color}" opacity=".14"/><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>`+ptsSvg+labs;
+}
+function mxScoreData(stats){
+ if(!stats.decided)return {score:0,label:'Sin datos',parts:{wr:0,pfScore:0,cons:0,rr:0,rec:0,ddControl:0}};
+ const wr=Math.max(0,Math.min(stats.winRate/100,1));
+ const pfScore=stats.profitFactor===Infinity?1:Math.max(0,Math.min(stats.profitFactor/2,1));
+ const cons=Math.max(0,Math.min(stats.consistency/100,1));
+ const rr=Math.max(0,Math.min(stats.winLossRatio/2,1));
+ const rec=Math.max(0,Math.min(stats.recoveryFactor/2,1));
+ const ddControl=stats.capital>0?Math.max(0,1-Math.min(stats.maxDD/Math.abs(stats.capital),1)):0;
+ const score=Math.round(Math.max(0,Math.min(100,wr*25+pfScore*20+cons*15+rr*15+rec*15+ddControl*10)));
+ let label=score>=80?'Muy sólido':score>=65?'Sólido':score>=50?'En desarrollo':score>=35?'Irregular':'Crítico';
+ return {score,label,parts:{wr,pfScore,cons,rr,rec,ddControl}};
+}
+function mxRenderScore(stats){
+ const z=mxScoreData(stats);$("mxScore").textContent=z.score;$("mxGauge").style.setProperty('--score',z.score+'%');$("mxScoreLabel").textContent=z.label;
+ const rows=[
+  ['Tasa de acierto',stats.winRate,'%','score-pink',z.parts.wr*100],
+  ['Reducción máxima',stats.maxDD,'','score-red',stats.capital?Math.min(100,stats.maxDD/stats.capital*100):0],
+  ['Consistencia',stats.consistency,'%','score-yellow',stats.consistency],
+  ['Factor de beneficio',stats.profitFactor,'','score-green',Math.min(100,stats.profitFactor/2*100)],
+  ['Promedio victorias/derrotas',stats.avgWin,-stats.avgLoss,'score-pink',Math.min(100,stats.winLossRatio/2*100)],
+  ['Factor de recuperación',stats.recoveryFactor,'','score-blue',Math.min(100,Math.max(0,stats.recoveryFactor/2*100))]
+ ];
+ $("mxScoreRows").innerHTML=rows.map((r,i)=>{
+  const val=i===0||i===2?r[1].toFixed(1)+'%':i===1?mxMoney(-r[1]):i===3?r[1].toFixed(2):i===4?`${mxMoney(r[1])}/${mxMoney(r[2])}`:r[1].toFixed(2);
+  return `<div class="score-row"><div class="score-label">${r[0]}</div><div class="score-bar"><i class="${r[3]}" style="width:${Math.max(0,Math.min(100,r[4]))}%;background:currentColor"></i></div><div class="score-value ${r[3]}">${val}</div></div>`;
+ }).join('');
+}
+function mxStats(ks,ds){
+ const perDay=ds.map(dayStats);
+ const W=perDay.reduce((a,d)=>a+d.W,0),L=perDay.reduce((a,d)=>a+d.L,0),D=perDay.reduce((a,d)=>a+d.D,0);
+ const GW=perDay.reduce((a,d)=>a+d.GW,0),GL=perDay.reduce((a,d)=>a+d.GL,0);
+ const total=W+L+D,decided=W+L,neto=perDay.reduce((a,d)=>a+d.neto,0);
+ const avgWin=W?GW/W:0,avgLoss=L?GL/L:0;
+ const nets=perDay.map(d=>d.neto),active=perDay.filter(d=>d.neto!==0),green=perDay.filter(d=>d.neto>0).length;
+ let capital=+S.cap||0,peak=capital,maxDD=0;const equity=[capital];
+ perDay.forEach(d=>{capital+=d.neto;peak=Math.max(peak,capital);maxDD=Math.max(maxDD,peak-capital);equity.push(capital)});
+ const profitFactor=GL?GW/GL:(GW>0?Infinity:0),winRate=decided?W/decided*100:0,consistency=active.length?green/active.length*100:0,winLossRatio=avgLoss?avgWin/avgLoss:0,recoveryFactor=maxDD?neto/maxDD:0;
+ let mw=0,ml=0,cw=0,closs=0;const trades=[];ds.forEach(d=>{(d.trades||[]).forEach(t=>trades.push(t))});
+ trades.forEach(t=>{const v=(Number(t.res)||0)*Math.abs(Number(t.amt)||0);if(v>0){cw++;closs=0}else if(v<0){closs++;cw=0}else{cw=0;closs=0}mw=Math.max(mw,cw);ml=Math.max(ml,closs)});
+ return {W,L,D,GW,GL,total,decided,neto,avgWin,avgLoss,nets,capital,equity,maxDD,profitFactor,winRate,consistency,winLossRatio,recoveryFactor,green,red:perDay.filter(d=>d.neto<0).length,activeDays:active.length,bestDay:nets.length?Math.max(...nets):0,worstDay:nets.length?Math.min(...nets):0,trades,mw,ml};
+}
+function mxKpi(label,value,sub,cls=''){return `<div class="metric-kpi"><small>${label}</small><b class="${cls}">${value}</b><span>${sub}</span></div>`}
+function mxRender(){
+ const {ks,ds}=mxData();
+ const st=mxStats(ks,ds);
+ const labels=ks.map(mxDate),daily=st.nets;
+ let run=0;const accum=daily.map(v=>run+=v);
+ const values=mxChartMode==='daily'?daily:accum;
+ // Las métricas se actualizan directamente desde el calendario.
+ if($("mxTotal")){
+  $("mxTotal").textContent=mxMoney(st.neto);$("mxTotal").className='metric-big '+cl(st.neto);
+  $("mxModeLabel").textContent=mxChartMode==='daily'?'Diario':'Acumulado';
+  $("mxMax").textContent=mxMoney(values.length?Math.max(...values):0);$("mxMin").textContent=mxMoney(values.length?Math.min(...values):0);$("mxLast").textContent=mxMoney(values.length?values[values.length-1]:0);
+  mxDrawMain(values,labels);
+ }
+ mxRenderScore(st);
+ $("mxKpis").innerHTML=[
+  mxKpi('Win rate',st.decided?st.winRate.toFixed(1)+'%':'–',st.W+' ganadas / '+st.L+' perdidas'+(st.D?' / '+st.D+' empates':''),st.winRate>=50?'g':'r'),
+  mxKpi('Profit Factor',st.decided?(isFinite(st.profitFactor)?st.profitFactor.toFixed(2):'∞'):'–','Ganancia bruta / pérdida bruta',st.profitFactor>=1?'g':'r'),
+  mxKpi('Resultado neto',mxMoney(st.neto),st.activeDays+' días con resultado',st.neto>=0?'g':'r'),
+  mxKpi('Drawdown máximo',mxMoney(-st.maxDD),'Máxima caída desde un pico','r'),
+  mxKpi('Promedio ganador',mxMoney(st.avgWin),st.W+' trades ganadores','g'),
+  mxKpi('Promedio perdedor',mxMoney(-st.avgLoss),st.L+' trades perdedores','r'),
+  mxKpi('Expectativa / trade',st.total?mxMoney(st.neto/st.total):'–','Resultado neto / total de trades',st.neto>=0?'g':'r'),
+  mxKpi('Racha máxima',st.mw+' / '+st.ml,'Ganadoras / perdedoras')
+ ].join('');
+ $("eqCurrent").textContent=mxMoney(st.capital);
+ $("dailyNet").textContent=mxMoney(st.neto);
+ $("ddValue").textContent=mxMoney(-st.maxDD);
+ $("wrValue").textContent=st.decided?st.winRate.toFixed(1)+'%':'0%';
+ mxDrawCurve('eqCurve',st.equity,['Inicio',...labels],{money:true,color:'var(--g)'});
+ mxDrawCurve('dailyCurve',daily,labels,{money:true,zero:true,color:'var(--g)',splitNeg:true});
+ let pk=st.equity[0];const dd2=st.equity.slice(1).map(v=>{pk=Math.max(pk,v);return -(pk-v)});
+ mxDrawCurve('ddCurve',dd2,labels,{money:true,zero:true,color:'var(--r)',pointColor:'var(--r)'});
+ let ww=0,tt=0;const wr=[];ds.forEach(d=>{const z=dayStats(d);ww+=z.W;tt+=z.W+z.L;wr.push(tt?ww/tt*100:0)});
+ mxDrawCurve('wrCurve',wr,labels,{percent:true,color:'var(--ac)',pointColor:'var(--ac)'});
+ const M=[
+  ['Total trades',st.total,'Operaciones registradas'],['Días operados',ks.length,'Días con registro'],['Días verdes',st.green,st.activeDays+' días con resultado'],['Días rojos',st.red,st.activeDays+' días con resultado'],
+  ['Empates',st.D,'Operaciones sin ganancia ni pérdida'],['Mejor día',mxMoney(st.bestDay),'Máximo resultado diario','g'],['Peor día',mxMoney(st.worstDay),'Mínimo resultado diario','r'],['Ratio V/D',st.winLossRatio?st.winLossRatio.toFixed(2):'–','Promedio ganador / perdedor'],['Factor recuperación',isFinite(st.recoveryFactor)?st.recoveryFactor.toFixed(2):'–','Resultado neto / drawdown'],
+  ['Capital inicial',mxMoney(+S.cap||0),'Dato configurado'],['Capital actual',mxMoney(st.capital),'Capital inicial + resultado neto'],['Ganancia bruta',mxMoney(st.GW),'Suma de operaciones ganadoras','g'],['Pérdida bruta',mxMoney(-st.GL),'Suma de operaciones perdedoras','r'],
+  ['Racha ganadora máx.',st.mw,'Trades consecutivos'],['Racha perdedora máx.',st.ml,'Trades consecutivos'],['Trades por día',ks.length?(st.total/ks.length).toFixed(1):'–','Promedio'],['Resultado por día',ks.length?mxMoney(st.neto/ks.length):'–','Promedio diario',st.neto>=0?'g':'r']
+ ];
+ $("mets").innerHTML=M.map(m=>`<div class="m"><small>${m[0]}</small><div class="${m[3]||''}">${m[1]}</div><span class="mu" style="font-size:10px">${m[2]}</span></div>`).join('');
+ assets();
+}
+function mxSetMode(mode){mxChartMode=mode;$("mxAccum").classList.toggle('on',mode==='accum');$("mxDaily").classList.toggle('on',mode==='daily');mxRender();}
+
+function mets(){mxRender();}
+const NOD='<text x="300" y="100" text-anchor="middle" fill="currentColor" opacity=".5">Sin datos aún</text>';
+function bars(id,lab,val){const n=val.length,w=540/Math.max(n,1);
+ $(id).innerHTML=n?`<line x1="40" x2="590" y1="100" y2="100" stroke="currentColor" opacity=".25"/>`+val.map((v,i)=>{const m=Math.max(1,...val.map(Math.abs)),h=Math.abs(v)/m*80,x=50+i*w;return `<rect x="${x}" y="${v>=0?100-h:100}" width="${Math.max(4,w-8)}" height="${v?Math.max(h,1):0}" rx="3" fill="${v>=0?"var(--g)":"var(--r)"}"/><text x="${x+(w-8)/2}" y="198" font-size="10" text-anchor="middle" fill="currentColor" opacity=".6">${lab[i]}</text>${v?`<text x="${x+(w-8)/2}" y="${v>=0?96-h:112+h}" font-size="9" text-anchor="middle" fill="currentColor">${Math.round(v)}</text>`:""}`}).join(""):NOD}
+function area(id,p){const sv=$(id);if(p.length<2){sv.innerHTML=NOD;return}
+ const mn=Math.min(...p,-1),X=i=>40+i*540/(p.length-1),Y=v=>20+(v/mn)*160,l=p.map((v,i)=>X(i)+","+Y(v)).join(" ");
+ sv.innerHTML=`<polygon points="${X(0)},20 ${l} ${X(p.length-1)},20" fill="var(--r)" opacity=".25"/><polyline points="${l}" fill="none" stroke="var(--r)" stroke-width="2"/><text x="4" y="24" font-size="10" fill="currentColor" opacity=".6">$0</text><text x="4" y="${Y(mn)}" font-size="10" fill="currentColor" opacity=".6">${$$(mn)}</text>`}
+function assets(){
+ const T=[];Object.keys(S.days).sort().forEach(k=>(S.days[k].trades||[]).forEach(t=>T.push({k,v:t.res*t.amt,a:t.asset||"Sin activo",s:t.setup||"Sin setup",e:t.err||"",h:t.hh})));
+ const grp=f=>{const a={};T.forEach(t=>{const n=f(t);a[n]=a[n]||{n:0,w:0,v:0};a[n].n++;a[n].v+=t.v;if(t.v>0)a[n].w++});return a};
+ const tb=(id,a,h)=>{const r=Object.entries(a).sort((x,y)=>y[1].v-x[1].v).map(([n,o])=>`<tr><td>${esc(n)}</td><td>${o.n}</td><td>${(o.w/o.n*100).toFixed(0)}%</td><td class="${cl(o.v)}">${$$(o.v)}</td></tr>`).join("");$(id).innerHTML=r?`<tr><th>${h}</th><th>Trades</th><th>Win rate</th><th>Neto</th></tr>`+r:'<tr><td class="mu">Aún no hay trades con este dato.</td></tr>'};
+ const ga=grp(t=>t.a),gs=grp(t=>t.s);tb("at",ga,"Activo");tb("st",gs,"Setup");tb("xt",grp(t=>t.e||"Sin error ✅"),"Error");
+ if($("asl"))$("asl").innerHTML=Object.keys(ga).map(x=>`<option value="${esc(x)}">`).join("");if($("ssl"))$("ssl").innerHTML=Object.keys(gs).map(x=>`<option value="${esc(x)}">`).join("");
+ const ks=Object.keys(S.days).sort(),nets=ks.map(k=>net(S.days[k])),tot=nets.reduce((a,b)=>a+b,0),vs=T.map(t=>t.v);
+ let c=+S.cap||0,pk=c,dd=0;const eq=[];ks.forEach(k=>{c+=net(S.days[k]);pk=Math.max(pk,c);dd=Math.max(dd,pk-c);eq.push(c-pk)});
+ let mw=0,ml=0,a1=0,a2=0;T.forEach(t=>{if(t.v>0){a1++;a2=0}else if(t.v<0){a2++;a1=0}else{a1=0;a2=0}mw=Math.max(mw,a1);ml=Math.max(ml,a2)});
+ const M2=[["Drawdown máximo",$$(-dd),"r"],["Expectativa por trade",T.length?$$(vs.reduce((a,b)=>a+b,0)/T.length):"–"],["Mejor trade",vs.length?$$(Math.max(...vs)):"–","g"],["Peor trade",vs.length?$$(Math.min(...vs)):"–","r"],["Racha ganadora máx.",mw],["Racha perdedora máx.",ml],["Disciplina (sin errores)",T.length?(T.filter(t=>!t.e).length/T.length*100).toFixed(0)+"%":"–"],["Trades por día",ks.length?(T.length/ks.length).toFixed(1):"–"],["Promedio por día",ks.length?$$(tot/ks.length):"–"]];
+ $("mets").insertAdjacentHTML("beforeend",M2.map(m=>`<div class="m"><small>${m[0]}</small><div class="${m[2]||""}">${m[1]}</div></div>`).join(""));
+ const dv=Array(7).fill(0);ks.forEach(k=>dv[(new Date(k+"T12:00").getDay()+6)%7]+=net(S.days[k]));bars("c1",["Lun","Mar","Mié","Jue","Vie","Sáb","Dom"],dv);
+ const mo={};ks.forEach(k=>mo[k.slice(0,7)]=(mo[k.slice(0,7)]||0)+net(S.days[k]));const mk=Object.keys(mo);bars("c2",mk.map(x=>x.slice(2)),mk.map(x=>mo[x]));
+ const hr={};T.forEach(t=>{if(t.h){const x=t.h.slice(0,2);hr[x]=(hr[x]||0)+t.v}});const hk=Object.keys(hr).sort();bars("c3",hk.map(x=>x+"h"),hk.map(x=>hr[x]));
+ area("c4",eq);
+}
+function emoTab(){
+ const g={};Object.values(S.days).forEach(d=>{if(d.trades&&d.trades.length)d.trades.forEach(t=>(g[t.emo]=g[t.emo]||[]).push(t.res*t.amt));else if(d.emo)(g[d.emo]=g[d.emo]||[]).push(net(d))});
+ const rows=Object.entries(g).map(([e,a])=>{const s=a.reduce((x,y)=>x+y,0);return `<tr><td>${e}</td><td>${a.length}</td><td class="${cl(s/a.length)}">${$$(s/a.length)}</td><td class="${cl(s)}">${$$(s)}</td></tr>`}).join("");
+ $("et").innerHTML=rows?"<tr><th>Emoción</th><th>Registros</th><th>Promedio</th><th>Total</th></tr>"+rows:'<tr><td class="mu">Aún no registras emociones en tus días.</td></tr>';
+}
+(function(){
+ const f=e=>{emoBtns("emo2",f,e);$("etip2").innerHTML=tip(e)};
+ emoBtns("emo2",f,null);
+})();
+if($("mxAccum"))$("mxAccum").onclick=()=>mxSetMode("accum");
+if($("mxDaily"))$("mxDaily").onclick=()=>mxSetMode("daily");
+if($("eqPeriod"))$("eqPeriod").onchange=e=>{mxPeriod=e.target.value;mets()};
+document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll(".tabs button").forEach(x=>x.classList.toggle("on",x===b));
+ ["a","i","b","c","d","h"].forEach(t=>$("t"+t).classList.toggle("hide",t!==b.dataset.t));
+ mets();emoTab();tools();if(b.dataset.t==="i")jjRenderAI()});
+function pos(){const c=+$("pc").value,r=+$("pr").value,e=+$("pe").value,sl=+$("ps").value,t=+$("pt").value||2,rk=c*r/100,d=Math.abs(e-sl);
+ if(!(rk>0&&d>0)){$("po").innerHTML='<div class="mu">Completa entrada y stop loss.</div>';return}
+ const lg=e>sl,tp=lg?e+d*t:e-d*t;
+ $("po").innerHTML=[["Riesgo en $",$$(rk),"r"],["Tamaño (unidades)",String(+(rk/d).toFixed(4))],["Take profit",String(+tp.toFixed(5))],["Ganancia objetivo",$$(rk*t),"g"],["Dirección",lg?"Compra":"Venta"]].map(m=>`<div class="m"><small>${m[0]}</small><div class="${m[2]||""}">${m[1]}</div></div>`).join("")}
+["pc","pr","pe","ps","pt"].forEach(i=>$(i).oninput=pos);
+function goal(){if(document.activeElement!==$("gm"))$("gm").value=S.goal||"";
+ const m=today().slice(0,7),v=Object.keys(S.days).filter(k=>k.startsWith(m)).reduce((a,k)=>a+net(S.days[k]),0),g=+S.goal||0,p=g?Math.max(0,v/g*100):0;
+ $("gmo").innerHTML=g?`<div class="mu" style="display:flex;justify-content:space-between"><span>${$$(v)} de ${$$(g)}</span><span>${p.toFixed(0)}%</span></div><div class="bar"><i style="width:${Math.min(100,p)}%;background:var(--g)"></i></div>`:'<div class="mu">Define una meta para ver tu progreso del mes.</div>'}
+$("gm").oninput=e=>{S.goal=+e.target.value||0;save();goal()};
+$("rl").value=S.rules||"";$("rl").oninput=e=>{S.rules=e.target.value;save()};
+function tools(){if(!$("pc").value)$("pc").value=Math.round((+S.cap||0)+Object.values(S.days).reduce((a,d)=>a+net(d),0))||"";pos();goal()}
+$("ex").onclick=()=>{
+ const rows=[["Fecha","Activo","Resultado","Importe ($)","Hora","Setup / estrategia","Error","Emoción","Motivo de entrada","Notas"]];
+ Object.keys(S.days).sort().forEach(k=>{const d=S.days[k];if(d.trades?.length)d.trades.forEach(t=>rows.push([k,t.asset||"",t.res>0?"Ganado":t.res<0?"Perdido":"Empate",t.amt,t.hh||"",t.setup||"",t.err||"",t.emo||"",t.why||"",t.note||""]));else rows.push([k,"","Resumen diario",net(d),"","","","","",d.note||""]);});
+ const csv="\ufeff"+rows.map(row=>row.map(v=>'"'+String(v??"").replace(/"/g,'""')+'"').join(";")).join("\r\n");
+ const blob=new Blob([csv],{type:"text/csv;charset=utf-8;"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="Journal_Jackson_datos.csv";a.click();URL.revokeObjectURL(url);
+};
+const TH=["dark","gray","light"],TI={dark:"🌙 Oscuro",gray:"🌫️ Gris",light:"☀️ Claro"};let curT=null;
+try{curT=localStorage.getItem("jjtheme")}catch(e){}
+function setT(t){curT=t;document.documentElement.dataset.theme=t;$("thm").textContent=TI[t];try{localStorage.setItem("jjtheme",t)}catch(e){}}
+$("thm").onclick=()=>setT(TH[(TH.indexOf(curT)+1)%3]);
+setT(TH.includes(curT)?curT:(matchMedia("(prefers-color-scheme:light)").matches?"light":"dark"));
+
+/* === IA COACH LOCAL — no requiere API ni librerías externas === */
+function jjTrades(){const a=[];Object.keys(S.days||{}).sort().forEach(k=>(S.days[k].trades||[]).forEach(t=>a.push({...t,k,v:(Number(t.res)||0)*Math.abs(Number(t.amt)||0)})));return a}
+function jjRange(days=7){const end=new Date();end.setHours(0,0,0,0);const out=[];for(let i=days-1;i>=0;i--){const d=new Date(end);d.setDate(end.getDate()-i);out.push(key(d.getFullYear(),d.getMonth(),d.getDate()))}return out}
+function jjAgg(keys){const rows=keys.filter(k=>S.days[k]).map(k=>({k,d:S.days[k],s:dayStats(S.days[k])}));const W=rows.reduce((a,x)=>a+x.s.W,0),L=rows.reduce((a,x)=>a+x.s.L,0),D=rows.reduce((a,x)=>a+x.s.D,0),neto=rows.reduce((a,x)=>a+x.s.neto,0),trades=rows.reduce((a,x)=>a+x.s.total,0),wins=rows.reduce((a,x)=>a+x.s.GW,0),loss=rows.reduce((a,x)=>a+x.s.GL,0),decided=W+L,wr=decided?W/decided*100:0,pf=loss?wins/loss:0;const ts=jjTrades().filter(t=>keys.includes(t.k)),em={},err={},setup={};ts.forEach(t=>{if(t.emo)em[t.emo]=(em[t.emo]||0)+1;if(t.err)err[t.err]=(err[t.err]||0)+1;if(t.setup)setup[t.setup]=(setup[t.setup]||0)+1});const dom=Object.entries(em).sort((a,b)=>b[1]-a[1])[0]?.[0]||"Sin emoción registrada",topErr=Object.entries(err).sort((a,b)=>b[1]-a[1])[0]?.[0]||"Sin error dominante",topSetup=Object.entries(setup).sort((a,b)=>b[1]-a[1])[0]?.[0]||"Sin setup dominante",best=ts.length?Math.max(...ts.map(t=>t.v)):0,worst=ts.length?Math.min(...ts.map(t=>t.v)):0;return{rows,W,L,D,neto,trades,wins,loss,wr,pf,dom,topErr,topSetup,best,worst}}
+function jjDailyKey(){const t=today();return S.days[t]?t:(sel&&S.days[sel]?sel:t)}
+function jjNarrative(a,period){if(!a.trades&&!a.rows.length)return"No hay suficientes registros para que la IA construya un análisis. Registra al menos un trade y vuelve a actualizar.";const discipline=a.topErr!=="Sin error dominante"?"El patrón a vigilar es «"+a.topErr+"». ":"",setup=a.topSetup!=="Sin setup dominante"?"Tu setup más repetido es «"+a.topSetup+"». ":"",emotion=a.dom!=="Sin emoción registrada"?"La emoción dominante fue "+a.dom+". ":"";if(period==="day"){const lead=a.neto>0?"El día terminó en verde.":a.neto<0?"El día terminó en rojo.":"El día terminó prácticamente plano.";return`${lead} Resultado ${$$(a.neto)} con ${a.trades} trade${a.trades===1?"":"s"}, ${a.W} ganador${a.W===1?"":"es"} y ${a.L} perdedor${a.L===1?"":"es"} (win rate ${a.wr.toFixed(1)}%). ${emotion}${discipline}${setup}Mejor operación: ${$$(a.best)} · peor operación: ${$$(a.worst)}. Prioridad: ${a.neto<0?"reducir impulsividad y proteger el límite diario":"repetir el proceso que produjo las mejores ejecuciones"} y revisar cada entrada antes de aumentar riesgo.`}return`Semana ${a.neto>0?"positiva":a.neto<0?"negativa":"plana"}: ${$$(a.neto)} en ${a.rows.length} día${a.rows.length===1?"":"s"} y ${a.trades} trade${a.trades===1?"":"s"}. Win rate ${a.wr.toFixed(1)}% · Profit Factor ${a.pf?a.pf.toFixed(2):"—"}. ${emotion}${discipline}${setup}Rango por operación: ${$$(a.worst)} a ${$$(a.best)}. Enfoque de la próxima semana: medir calidad de ejecución, respetar stops y repetir únicamente los setups que tengan evidencia en tu propio historial.`}
+function jjPrompt(kind){const todayKey=jjDailyKey(),d=jjAgg([todayKey]),w=jjAgg(jjRange(7)),rules=S.rules||"No registradas",base="Soy un trader y este es mi Journal Jackson. No quiero predicciones ni recomendaciones financieras; quiero análisis de proceso. Datos:";if(kind==="daily")return`${base}\nDía ${todayKey}: neto ${$$(d.neto)}, trades ${d.trades}, ganados ${d.W}, perdidos ${d.L}, win rate ${d.wr.toFixed(1)}%, emoción dominante ${d.dom}, error dominante ${d.topErr}, setup dominante ${d.topSetup}.\n\nActúa como coach de trading. Devuélveme: 1) qué hice bien, 2) qué patrón me perjudicó, 3) tres acciones concretas para mañana, 4) una frase de disciplina. Sé directo y usa solo los datos entregados.`;if(kind==="weekly")return`${base}\nÚltimos 7 días: neto ${$$(w.neto)}, trades ${w.trades}, ganados ${w.W}, perdidos ${w.L}, win rate ${w.wr.toFixed(1)}%, profit factor ${w.pf?w.pf.toFixed(2):"—"}, emoción ${w.dom}, error ${w.topErr}, setup ${w.topSetup}.\n\nHaz una revisión semanal profesional. Identifica consistencias, errores repetidos, mejor comportamiento, mayor riesgo de indisciplina y 3 prioridades medibles para la próxima semana.`;if(kind==="psych")return`${base}\nEmoción dominante: ${w.dom}. Error repetido: ${w.topErr}. Resultado semanal: ${$$(w.neto)}. Trades: ${w.trades}. Win rate: ${w.wr.toFixed(1)}%.\n\nAnaliza mi psicología operativa sin diagnosticarme. Separa emoción, conducta y resultado. Señala si aparecen FOMO, venganza, sobreoperación o exceso de confianza solo cuando los datos lo sugieran.`;return`${base}\nReglas personales: ${rules}. Resultado últimos 7 días: ${$$(w.neto)}. Win rate ${w.wr.toFixed(1)}%. Setup más repetido: ${w.topSetup}.\n\nCrea una checklist pre-market de máximo 10 puntos basada en mis propias reglas y datos. Incluye: riesgo, setup, entrada, stop, salida, estado emocional y condición para dejar de operar.`}
+function jjRenderAI(){if(!$("jjDailySummary"))return;const dk=jjDailyKey(),d=jjAgg([dk]),w=jjAgg(jjRange(7));$("jjDailyLabel").textContent="Fecha analizada: "+dk+(S.days[dk]?" · datos encontrados":" · sin registro todavía");$("jjDailySummary").textContent=jjNarrative(d,"day");$("jjWeeklySummary").textContent=jjNarrative(w,"week");const stats=a=>`<div class="jj-ai-stat"><small>Neto</small><b class="${cl(a.neto)}">${$$(a.neto)}</b></div><div class="jj-ai-stat"><small>Win rate</small><b>${a.wr.toFixed(1)}%</b></div><div class="jj-ai-stat"><small>Trades</small><b>${a.trades}</b></div><div class="jj-ai-stat"><small>PF</small><b>${a.pf?a.pf.toFixed(2):"—"}</b></div>`;$("jjDailyStats").innerHTML=stats(d);$("jjWeeklyStats").innerHTML=stats(w);$("jjPromptDaily").value=jjPrompt("daily");$("jjPromptWeekly").value=jjPrompt("weekly");$("jjPromptPsych").value=jjPrompt("psych");$("jjPromptPremarket").value=jjPrompt("premarket");$("jjWeekStrip").innerHTML=jjRange(7).map(k=>{const a=S.days[k],v=a?net(a):0,ds=a?dayStats(a):null;return`<div class="jj-week-day"><small>${new Date(k+"T12:00").toLocaleDateString("es",{weekday:"short"})}</small><b>${k.slice(8)}</b><em class="${cl(v)}">${a?$$(v):"—"}</em><small>${ds?ds.total+" trades":"sin registro"}</small></div>`}).join("")}
+async function jjCopy(text,btn){try{await navigator.clipboard.writeText(text);const old=btn.textContent;btn.textContent="✓ Copiado";setTimeout(()=>btn.textContent=old,1200)}catch(e){const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();btn.textContent="✓ Copiado";setTimeout(()=>btn.textContent="Copiar",1200)}}
+if($("jjRefreshAI"))$("jjRefreshAI").onclick=jjRenderAI;
+if($("jjCopyDaily"))$("jjCopyDaily").onclick=()=>jjCopy($("jjDailySummary").textContent,$("jjCopyDaily"));
+if($("jjCopyWeekly"))$("jjCopyWeekly").onclick=()=>jjCopy($("jjWeeklySummary").textContent,$("jjCopyWeekly"));
+document.querySelectorAll(".jj-copy").forEach(b=>b.onclick=()=>jjCopy(jjPrompt(b.dataset.prompt),b));
+
+let SM=null;
+try{claude.use("sample").then(x=>{SM=x;document.querySelectorAll(".ai").forEach(b=>b.classList.toggle("hide",!x))}).catch(()=>{})}catch(e){}
+const SYS="Eres un coach de trading y psicología del trader. Responde en español, claro y breve, con estos títulos: 1) Emoción dominante y cómo afectó los resultados, 2) Errores o patrones que ves, 3) Soluciones concretas (3 a 5 acciones). Basa todo solo en los datos. No des consejos financieros ni predicciones de mercado. ";
+async function ai(btn,out,data){if(!SM)return;out.classList.remove("hide");out.textContent="Analizando…";btn.disabled=true;
+ try{const r=await SM(SYS+"Datos: "+JSON.stringify(data),{cache:false,onText:({text})=>{out.textContent=text}});out.textContent=r.text}
+ catch(e){out.textContent=e&&e.code==="not_granted"?"Necesitas dar permiso para usar la IA.":"No se pudo analizar ahora, intenta de nuevo."}
+ btn.disabled=false}
+const tj=t=>({resultado:t.res>0?"ganado":t.res<0?"perdido":"empate",monto:t.amt,activo:t.asset||"?",emocion:t.emo,motivo:t.why,nota:t.note});
+$("aiD").onclick=()=>ai($("aiD"),$("aiDo"),{fecha:sel,limiteDiario:sel?limD(sel):0,trades:tr.map(tj),notaDelDia:$("note").value,emocionGeneral:emo});
+$("aiG").onclick=()=>ai($("aiG"),$("aiGo"),{dias:Object.keys(S.days).sort().slice(-30).map(k=>{const d=S.days[k];return{fecha:k,neto:net(d),emocion:d.emo,nota:d.note,trades:(d.trades||[]).map(tj)}})});
+
+// ---- Sesión persistente: al recargar la página se vuelve a entrar sola ----
+function flushCloud(){
+ if(!cloudToken||!cloudDirty)return;
+ try{fetch(SUPABASE_URL+"/rest/v1/rpc/jj_save_data",{method:"POST",keepalive:true,credentials:"omit",
+  headers:{"apikey":SUPABASE_PUBLISHABLE_KEY,"Authorization":"Bearer "+SUPABASE_PUBLISHABLE_KEY,"Content-Type":"application/json"},
+  body:JSON.stringify({p_token:cloudToken,p_data:S})}).catch(()=>{});}catch(e){}
+}
+window.addEventListener("pagehide",()=>{try{if(currentUser)saveAccount();}catch(e){};flushCloud()});
+document.addEventListener("visibilitychange",()=>{if(document.hidden){try{if(currentUser)saveAccount();}catch(e){};flushCloud()}});
+async function restoreSession(){
+ let ses=null;try{ses=JSON.parse(localStorage.getItem(SESSION_KEY)||"null")}catch(e){}
+ if(!ses||!ses.token||!ses.username)return;
+ setAuthMsg("Restaurando tu sesión…",true);
+ cloudToken=ses.token;currentUser=ses.username;K=accountKey(currentUser);
+ let pending=false;try{pending=localStorage.getItem(DIRTY_KEY)===K}catch(e){}
+ try{
+  const remote=await cloudLoad();
+  if(pending){
+   // había cambios locales sin subir (recargaste justo al editar): se conservan y se suben
+   const local=legacyDataFor(currentUser);
+   S=Object.assign(defaultData(),clone(local));cloudDirty=true;
+   showApp(S);setAuthMsg("");queueCloudSave();
+  }else{showApp(remote);setAuthMsg("");setCloudStatus("☁️ Sincronizado",true);}
+ }catch(e){
+  if(/expirada|inválid|invalid/i.test(e.message||"")){clearSession();cloudToken=null;currentUser=null;K="";setAuthMsg("Tu sesión expiró. Inicia sesión de nuevo.");}
+  else{ // sin internet: abre con la copia local y sincroniza cuando vuelva
+   S=Object.assign(defaultData(),clone(legacyDataFor(currentUser)));showApp(S);setAuthMsg("");cloudDirty=pending;setCloudStatus("☁️ Sin conexión",false);
+  }
+ }
+}
+// ---- MODO LOCAL: sin usuario ni contraseña; todo se guarda en este navegador/PC ----
+async function startLocal(){
+ clearSession();cloudToken=null;
+ currentUser="Jackson";K=accountKey(currentUser);
+ let best=null;
+ try{const a=localLegacyAccounts()[K];if(a&&a.data)best=a}catch(e){}
+ try{const b=await idbGet("acct:"+K);if(b&&b.data&&(!best||(b.savedAt||0)>(best.savedAt||0)))best=b}catch(e){}
+ S=Object.assign(defaultData(),clone(best?best.data:legacyDataFor(currentUser)));
+ try{if(navigator.storage&&navigator.storage.persist)navigator.storage.persist()}catch(e){}
+ $("currentUser").textContent=currentUser;
+ $("authView").classList.add("hide");
+ $("appShell").classList.remove("hide");
+ ["logout","newAccount"].forEach(id=>{const b=$(id);if(b)b.style.display="none"});
+ try{renderAll();}catch(e){console.error("renderAll:",e)}
+ saveAccount();
+ setCloudStatus("💾 Guardado automático activo",true);
+}
+startLocal();
+</script>
+</body></html>
